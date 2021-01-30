@@ -69,6 +69,7 @@ Notes:
   * templated : is set if the function belongs to a templated class (ImVector)
   * templatedgen: is set if the function belongs to a struct generated from template (ImVector_ImWchar)
   * nonUDT : if present the original function was returning a user defined type so that signature has been changed to accept a pointer to the UDT as first argument.
+  * isIMSTR_S: if present this function was generated from a function taking ImStr arguments. Its name will be as the original function but with a _S postfix. It will take const char* instead of ImStr.
   * location : name of the header file and linenumber this function comes from. (imgui:000, internal:123, imgui_impl_xxx:123)
   * is_static_function : is setted when it is an struct static function.
 ### structs_and_enums description
