@@ -208,8 +208,8 @@ igBeginTableEx	2
 1	bool	igBeginTableExStr (ImStr,ImGuiID,int,ImGuiTableFlags,const ImVec2,float)
 2	bool	igBeginTableExChpt (const char*,ImGuiID,int,ImGuiTableFlags,const ImVec2,float)
 igButton	2
-1	bool	igButtonStr (const ImStr,const ImVec2)
-2	bool	igButtonChpt (const const char*,const ImVec2)
+1	bool	igButtonStr (ImStr,const ImVec2)
+2	bool	igButtonChpt (const char*,const ImVec2)
 igButtonEx	2
 1	bool	igButtonExStr (ImStr,const ImVec2,ImGuiButtonFlags)
 2	bool	igButtonExChpt (const char*,const ImVec2,ImGuiButtonFlags)
