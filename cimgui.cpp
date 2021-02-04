@@ -119,7 +119,7 @@ CIMGUI_API bool igShowStyleSelector(ImStr label)
 {
     return ImGui::ShowStyleSelector(label);
 }
-CIMGUI_API bool SigShowStyleSelector(const char* label)
+CIMGUI_API bool igShowStyleSelector_Strv(const char* label)
 {
     return ImGui::ShowStyleSelector(label);
 }
@@ -127,7 +127,7 @@ CIMGUI_API void igShowFontSelector(ImStr label)
 {
     return ImGui::ShowFontSelector(label);
 }
-CIMGUI_API void SigShowFontSelector(const char* label)
+CIMGUI_API void igShowFontSelector_Strv(const char* label)
 {
     return ImGui::ShowFontSelector(label);
 }
@@ -155,7 +155,7 @@ CIMGUI_API bool igBegin(ImStr name,bool* p_open,ImGuiWindowFlags flags)
 {
     return ImGui::Begin(name,p_open,flags);
 }
-CIMGUI_API bool SigBegin(const char* name,bool* p_open,ImGuiWindowFlags flags)
+CIMGUI_API bool igBegin_Strv(const char* name,bool* p_open,ImGuiWindowFlags flags)
 {
     return ImGui::Begin(name,p_open,flags);
 }
@@ -167,7 +167,7 @@ CIMGUI_API bool igBeginChildSTR(ImStr str_id,const ImVec2 size,bool border,ImGui
 {
     return ImGui::BeginChild(str_id,size,border,flags);
 }
-CIMGUI_API bool SigBeginChildSTR(const char* str_id,const ImVec2 size,bool border,ImGuiWindowFlags flags)
+CIMGUI_API bool igBeginChildSTR_Strv(const char* str_id,const ImVec2 size,bool border,ImGuiWindowFlags flags)
 {
     return ImGui::BeginChild(str_id,size,border,flags);
 }
@@ -267,7 +267,7 @@ CIMGUI_API void igSetWindowPosSTR(ImStr name,const ImVec2 pos,ImGuiCond cond)
 {
     return ImGui::SetWindowPos(name,pos,cond);
 }
-CIMGUI_API void SigSetWindowPosSTR(const char* name,const ImVec2 pos,ImGuiCond cond)
+CIMGUI_API void igSetWindowPosSTR_Strv(const char* name,const ImVec2 pos,ImGuiCond cond)
 {
     return ImGui::SetWindowPos(name,pos,cond);
 }
@@ -275,7 +275,7 @@ CIMGUI_API void igSetWindowSizeSTR(ImStr name,const ImVec2 size,ImGuiCond cond)
 {
     return ImGui::SetWindowSize(name,size,cond);
 }
-CIMGUI_API void SigSetWindowSizeSTR(const char* name,const ImVec2 size,ImGuiCond cond)
+CIMGUI_API void igSetWindowSizeSTR_Strv(const char* name,const ImVec2 size,ImGuiCond cond)
 {
     return ImGui::SetWindowSize(name,size,cond);
 }
@@ -283,7 +283,7 @@ CIMGUI_API void igSetWindowCollapsedSTR(ImStr name,bool collapsed,ImGuiCond cond
 {
     return ImGui::SetWindowCollapsed(name,collapsed,cond);
 }
-CIMGUI_API void SigSetWindowCollapsedSTR(const char* name,bool collapsed,ImGuiCond cond)
+CIMGUI_API void igSetWindowCollapsedSTR_Strv(const char* name,bool collapsed,ImGuiCond cond)
 {
     return ImGui::SetWindowCollapsed(name,collapsed,cond);
 }
@@ -291,7 +291,7 @@ CIMGUI_API void igSetWindowFocusSTR(ImStr name)
 {
     return ImGui::SetWindowFocus(name);
 }
-CIMGUI_API void SigSetWindowFocusSTR(const char* name)
+CIMGUI_API void igSetWindowFocusSTR_Strv(const char* name)
 {
     return ImGui::SetWindowFocus(name);
 }
@@ -551,7 +551,7 @@ CIMGUI_API void igPushIDSTR(ImStr str_id)
 {
     return ImGui::PushID(str_id);
 }
-CIMGUI_API void SigPushIDSTR(const char* str_id)
+CIMGUI_API void igPushIDSTR_Strv(const char* str_id)
 {
     return ImGui::PushID(str_id);
 }
@@ -575,7 +575,7 @@ CIMGUI_API ImGuiID igGetIDSTR(ImStr str_id)
 {
     return ImGui::GetID(str_id);
 }
-CIMGUI_API ImGuiID SigGetIDSTR(const char* str_id)
+CIMGUI_API ImGuiID igGetIDSTR_Strv(const char* str_id)
 {
     return ImGui::GetID(str_id);
 }
@@ -591,7 +591,7 @@ CIMGUI_API void igTextUnformattedSTR(ImStr text)
 {
     return ImGui::TextUnformatted(text);
 }
-CIMGUI_API void SigTextUnformattedSTR(const char* text)
+CIMGUI_API void igTextUnformattedSTR_Strv(const char* text)
 {
     return ImGui::TextUnformatted(text);
 }
@@ -650,7 +650,7 @@ CIMGUI_API void igLabelText(ImStr label,const char* fmt,...)
     ImGui::LabelTextV(label,fmt,args);
     va_end(args);
 }
-CIMGUI_API void SigLabelText(const char* label,const char* fmt,...)
+CIMGUI_API void igLabelText_Strv(const char* label,const char* fmt,...)
 {
     va_list args;
     va_start(args, fmt);
@@ -661,7 +661,7 @@ CIMGUI_API void igLabelTextV(ImStr label,const char* fmt,va_list args)
 {
     return ImGui::LabelTextV(label,fmt,args);
 }
-CIMGUI_API void SigLabelTextV(const char* label,const char* fmt,va_list args)
+CIMGUI_API void igLabelTextV_Strv(const char* label,const char* fmt,va_list args)
 {
     return ImGui::LabelTextV(label,fmt,args);
 }
@@ -680,7 +680,7 @@ CIMGUI_API bool igButton(ImStr label,const ImVec2 size)
 {
     return ImGui::Button(label,size);
 }
-CIMGUI_API bool SigButton(const char* label,const ImVec2 size)
+CIMGUI_API bool igButton_Strv(const char* label,const ImVec2 size)
 {
     return ImGui::Button(label,size);
 }
@@ -688,7 +688,7 @@ CIMGUI_API bool igSmallButton(ImStr label)
 {
     return ImGui::SmallButton(label);
 }
-CIMGUI_API bool SigSmallButton(const char* label)
+CIMGUI_API bool igSmallButton_Strv(const char* label)
 {
     return ImGui::SmallButton(label);
 }
@@ -696,7 +696,7 @@ CIMGUI_API bool igInvisibleButton(ImStr str_id,const ImVec2 size,ImGuiButtonFlag
 {
     return ImGui::InvisibleButton(str_id,size,flags);
 }
-CIMGUI_API bool SigInvisibleButton(const char* str_id,const ImVec2 size,ImGuiButtonFlags flags)
+CIMGUI_API bool igInvisibleButton_Strv(const char* str_id,const ImVec2 size,ImGuiButtonFlags flags)
 {
     return ImGui::InvisibleButton(str_id,size,flags);
 }
@@ -704,7 +704,7 @@ CIMGUI_API bool igArrowButton(ImStr str_id,ImGuiDir dir)
 {
     return ImGui::ArrowButton(str_id,dir);
 }
-CIMGUI_API bool SigArrowButton(const char* str_id,ImGuiDir dir)
+CIMGUI_API bool igArrowButton_Strv(const char* str_id,ImGuiDir dir)
 {
     return ImGui::ArrowButton(str_id,dir);
 }
@@ -720,7 +720,7 @@ CIMGUI_API bool igCheckbox(ImStr label,bool* v)
 {
     return ImGui::Checkbox(label,v);
 }
-CIMGUI_API bool SigCheckbox(const char* label,bool* v)
+CIMGUI_API bool igCheckbox_Strv(const char* label,bool* v)
 {
     return ImGui::Checkbox(label,v);
 }
@@ -728,7 +728,7 @@ CIMGUI_API bool igCheckboxFlagsIntPtr(ImStr label,int* flags,int flags_value)
 {
     return ImGui::CheckboxFlags(label,flags,flags_value);
 }
-CIMGUI_API bool SigCheckboxFlagsIntPtr(const char* label,int* flags,int flags_value)
+CIMGUI_API bool igCheckboxFlagsIntPtr_Strv(const char* label,int* flags,int flags_value)
 {
     return ImGui::CheckboxFlags(label,flags,flags_value);
 }
@@ -736,7 +736,7 @@ CIMGUI_API bool igCheckboxFlagsUintPtr(ImStr label,unsigned int* flags,unsigned 
 {
     return ImGui::CheckboxFlags(label,flags,flags_value);
 }
-CIMGUI_API bool SigCheckboxFlagsUintPtr(const char* label,unsigned int* flags,unsigned int flags_value)
+CIMGUI_API bool igCheckboxFlagsUintPtr_Strv(const char* label,unsigned int* flags,unsigned int flags_value)
 {
     return ImGui::CheckboxFlags(label,flags,flags_value);
 }
@@ -744,7 +744,7 @@ CIMGUI_API bool igRadioButtonBool(ImStr label,bool active)
 {
     return ImGui::RadioButton(label,active);
 }
-CIMGUI_API bool SigRadioButtonBool(const char* label,bool active)
+CIMGUI_API bool igRadioButtonBool_Strv(const char* label,bool active)
 {
     return ImGui::RadioButton(label,active);
 }
@@ -752,7 +752,7 @@ CIMGUI_API bool igRadioButtonIntPtr(ImStr label,int* v,int v_button)
 {
     return ImGui::RadioButton(label,v,v_button);
 }
-CIMGUI_API bool SigRadioButtonIntPtr(const char* label,int* v,int v_button)
+CIMGUI_API bool igRadioButtonIntPtr_Strv(const char* label,int* v,int v_button)
 {
     return ImGui::RadioButton(label,v,v_button);
 }
@@ -760,7 +760,7 @@ CIMGUI_API void igProgressBar(float fraction,const ImVec2 size_arg,ImStr overlay
 {
     return ImGui::ProgressBar(fraction,size_arg,overlay);
 }
-CIMGUI_API void SigProgressBar(float fraction,const ImVec2 size_arg,const char* overlay)
+CIMGUI_API void igProgressBar_Strv(float fraction,const ImVec2 size_arg,const char* overlay)
 {
     return ImGui::ProgressBar(fraction,size_arg,overlay);
 }
@@ -772,7 +772,7 @@ CIMGUI_API bool igBeginCombo(ImStr label,ImStr preview_value,ImGuiComboFlags fla
 {
     return ImGui::BeginCombo(label,preview_value,flags);
 }
-CIMGUI_API bool SigBeginCombo(const char* label,const char* preview_value,ImGuiComboFlags flags)
+CIMGUI_API bool igBeginCombo_Strv(const char* label,const char* preview_value,ImGuiComboFlags flags)
 {
     return ImGui::BeginCombo(label,preview_value,flags);
 }
@@ -784,7 +784,7 @@ CIMGUI_API bool igComboStr_arr(ImStr label,int* current_item,const char* const i
 {
     return ImGui::Combo(label,current_item,items,items_count,popup_max_height_in_items);
 }
-CIMGUI_API bool SigComboStr_arr(const char* label,int* current_item,const char* const items[],int items_count,int popup_max_height_in_items)
+CIMGUI_API bool igComboStr_arr_Strv(const char* label,int* current_item,const char* const items[],int items_count,int popup_max_height_in_items)
 {
     return ImGui::Combo(label,current_item,items,items_count,popup_max_height_in_items);
 }
@@ -792,7 +792,7 @@ CIMGUI_API bool igComboStr(ImStr label,int* current_item,const char* items_separ
 {
     return ImGui::Combo(label,current_item,items_separated_by_zeros,popup_max_height_in_items);
 }
-CIMGUI_API bool SigComboStr(const char* label,int* current_item,const char* items_separated_by_zeros,int popup_max_height_in_items)
+CIMGUI_API bool igComboStr_Strv(const char* label,int* current_item,const char* items_separated_by_zeros,int popup_max_height_in_items)
 {
     return ImGui::Combo(label,current_item,items_separated_by_zeros,popup_max_height_in_items);
 }
@@ -800,7 +800,7 @@ CIMGUI_API bool igComboFnBoolPtr(ImStr label,int* current_item,bool(*items_gette
 {
     return ImGui::Combo(label,current_item,items_getter,data,items_count,popup_max_height_in_items);
 }
-CIMGUI_API bool SigComboFnBoolPtr(const char* label,int* current_item,bool(*items_getter)(void* data,int idx,const char** out_text),void* data,int items_count,int popup_max_height_in_items)
+CIMGUI_API bool igComboFnBoolPtr_Strv(const char* label,int* current_item,bool(*items_getter)(void* data,int idx,const char** out_text),void* data,int items_count,int popup_max_height_in_items)
 {
     return ImGui::Combo(label,current_item,items_getter,data,items_count,popup_max_height_in_items);
 }
@@ -808,7 +808,7 @@ CIMGUI_API bool igDragFloat(ImStr label,float* v,float v_speed,float v_min,float
 {
     return ImGui::DragFloat(label,v,v_speed,v_min,v_max,format,flags);
 }
-CIMGUI_API bool SigDragFloat(const char* label,float* v,float v_speed,float v_min,float v_max,const char* format,ImGuiSliderFlags flags)
+CIMGUI_API bool igDragFloat_Strv(const char* label,float* v,float v_speed,float v_min,float v_max,const char* format,ImGuiSliderFlags flags)
 {
     return ImGui::DragFloat(label,v,v_speed,v_min,v_max,format,flags);
 }
@@ -816,7 +816,7 @@ CIMGUI_API bool igDragFloat2(ImStr label,float v[2],float v_speed,float v_min,fl
 {
     return ImGui::DragFloat2(label,v,v_speed,v_min,v_max,format,flags);
 }
-CIMGUI_API bool SigDragFloat2(const char* label,float v[2],float v_speed,float v_min,float v_max,const char* format,ImGuiSliderFlags flags)
+CIMGUI_API bool igDragFloat2_Strv(const char* label,float v[2],float v_speed,float v_min,float v_max,const char* format,ImGuiSliderFlags flags)
 {
     return ImGui::DragFloat2(label,v,v_speed,v_min,v_max,format,flags);
 }
@@ -824,7 +824,7 @@ CIMGUI_API bool igDragFloat3(ImStr label,float v[3],float v_speed,float v_min,fl
 {
     return ImGui::DragFloat3(label,v,v_speed,v_min,v_max,format,flags);
 }
-CIMGUI_API bool SigDragFloat3(const char* label,float v[3],float v_speed,float v_min,float v_max,const char* format,ImGuiSliderFlags flags)
+CIMGUI_API bool igDragFloat3_Strv(const char* label,float v[3],float v_speed,float v_min,float v_max,const char* format,ImGuiSliderFlags flags)
 {
     return ImGui::DragFloat3(label,v,v_speed,v_min,v_max,format,flags);
 }
@@ -832,7 +832,7 @@ CIMGUI_API bool igDragFloat4(ImStr label,float v[4],float v_speed,float v_min,fl
 {
     return ImGui::DragFloat4(label,v,v_speed,v_min,v_max,format,flags);
 }
-CIMGUI_API bool SigDragFloat4(const char* label,float v[4],float v_speed,float v_min,float v_max,const char* format,ImGuiSliderFlags flags)
+CIMGUI_API bool igDragFloat4_Strv(const char* label,float v[4],float v_speed,float v_min,float v_max,const char* format,ImGuiSliderFlags flags)
 {
     return ImGui::DragFloat4(label,v,v_speed,v_min,v_max,format,flags);
 }
@@ -840,7 +840,7 @@ CIMGUI_API bool igDragFloatRange2(ImStr label,float* v_current_min,float* v_curr
 {
     return ImGui::DragFloatRange2(label,v_current_min,v_current_max,v_speed,v_min,v_max,format,format_max,flags);
 }
-CIMGUI_API bool SigDragFloatRange2(const char* label,float* v_current_min,float* v_current_max,float v_speed,float v_min,float v_max,const char* format,const char* format_max,ImGuiSliderFlags flags)
+CIMGUI_API bool igDragFloatRange2_Strv(const char* label,float* v_current_min,float* v_current_max,float v_speed,float v_min,float v_max,const char* format,const char* format_max,ImGuiSliderFlags flags)
 {
     return ImGui::DragFloatRange2(label,v_current_min,v_current_max,v_speed,v_min,v_max,format,format_max,flags);
 }
@@ -848,7 +848,7 @@ CIMGUI_API bool igDragInt(ImStr label,int* v,float v_speed,int v_min,int v_max,I
 {
     return ImGui::DragInt(label,v,v_speed,v_min,v_max,format,flags);
 }
-CIMGUI_API bool SigDragInt(const char* label,int* v,float v_speed,int v_min,int v_max,const char* format,ImGuiSliderFlags flags)
+CIMGUI_API bool igDragInt_Strv(const char* label,int* v,float v_speed,int v_min,int v_max,const char* format,ImGuiSliderFlags flags)
 {
     return ImGui::DragInt(label,v,v_speed,v_min,v_max,format,flags);
 }
@@ -856,7 +856,7 @@ CIMGUI_API bool igDragInt2(ImStr label,int v[2],float v_speed,int v_min,int v_ma
 {
     return ImGui::DragInt2(label,v,v_speed,v_min,v_max,format,flags);
 }
-CIMGUI_API bool SigDragInt2(const char* label,int v[2],float v_speed,int v_min,int v_max,const char* format,ImGuiSliderFlags flags)
+CIMGUI_API bool igDragInt2_Strv(const char* label,int v[2],float v_speed,int v_min,int v_max,const char* format,ImGuiSliderFlags flags)
 {
     return ImGui::DragInt2(label,v,v_speed,v_min,v_max,format,flags);
 }
@@ -864,7 +864,7 @@ CIMGUI_API bool igDragInt3(ImStr label,int v[3],float v_speed,int v_min,int v_ma
 {
     return ImGui::DragInt3(label,v,v_speed,v_min,v_max,format,flags);
 }
-CIMGUI_API bool SigDragInt3(const char* label,int v[3],float v_speed,int v_min,int v_max,const char* format,ImGuiSliderFlags flags)
+CIMGUI_API bool igDragInt3_Strv(const char* label,int v[3],float v_speed,int v_min,int v_max,const char* format,ImGuiSliderFlags flags)
 {
     return ImGui::DragInt3(label,v,v_speed,v_min,v_max,format,flags);
 }
@@ -872,7 +872,7 @@ CIMGUI_API bool igDragInt4(ImStr label,int v[4],float v_speed,int v_min,int v_ma
 {
     return ImGui::DragInt4(label,v,v_speed,v_min,v_max,format,flags);
 }
-CIMGUI_API bool SigDragInt4(const char* label,int v[4],float v_speed,int v_min,int v_max,const char* format,ImGuiSliderFlags flags)
+CIMGUI_API bool igDragInt4_Strv(const char* label,int v[4],float v_speed,int v_min,int v_max,const char* format,ImGuiSliderFlags flags)
 {
     return ImGui::DragInt4(label,v,v_speed,v_min,v_max,format,flags);
 }
@@ -880,7 +880,7 @@ CIMGUI_API bool igDragIntRange2(ImStr label,int* v_current_min,int* v_current_ma
 {
     return ImGui::DragIntRange2(label,v_current_min,v_current_max,v_speed,v_min,v_max,format,format_max,flags);
 }
-CIMGUI_API bool SigDragIntRange2(const char* label,int* v_current_min,int* v_current_max,float v_speed,int v_min,int v_max,const char* format,const char* format_max,ImGuiSliderFlags flags)
+CIMGUI_API bool igDragIntRange2_Strv(const char* label,int* v_current_min,int* v_current_max,float v_speed,int v_min,int v_max,const char* format,const char* format_max,ImGuiSliderFlags flags)
 {
     return ImGui::DragIntRange2(label,v_current_min,v_current_max,v_speed,v_min,v_max,format,format_max,flags);
 }
@@ -888,7 +888,7 @@ CIMGUI_API bool igDragScalar(ImStr label,ImGuiDataType data_type,void* p_data,fl
 {
     return ImGui::DragScalar(label,data_type,p_data,v_speed,p_min,p_max,format,flags);
 }
-CIMGUI_API bool SigDragScalar(const char* label,ImGuiDataType data_type,void* p_data,float v_speed,const void* p_min,const void* p_max,const char* format,ImGuiSliderFlags flags)
+CIMGUI_API bool igDragScalar_Strv(const char* label,ImGuiDataType data_type,void* p_data,float v_speed,const void* p_min,const void* p_max,const char* format,ImGuiSliderFlags flags)
 {
     return ImGui::DragScalar(label,data_type,p_data,v_speed,p_min,p_max,format,flags);
 }
@@ -896,7 +896,7 @@ CIMGUI_API bool igDragScalarN(ImStr label,ImGuiDataType data_type,void* p_data,i
 {
     return ImGui::DragScalarN(label,data_type,p_data,components,v_speed,p_min,p_max,format,flags);
 }
-CIMGUI_API bool SigDragScalarN(const char* label,ImGuiDataType data_type,void* p_data,int components,float v_speed,const void* p_min,const void* p_max,const char* format,ImGuiSliderFlags flags)
+CIMGUI_API bool igDragScalarN_Strv(const char* label,ImGuiDataType data_type,void* p_data,int components,float v_speed,const void* p_min,const void* p_max,const char* format,ImGuiSliderFlags flags)
 {
     return ImGui::DragScalarN(label,data_type,p_data,components,v_speed,p_min,p_max,format,flags);
 }
@@ -904,7 +904,7 @@ CIMGUI_API bool igSliderFloat(ImStr label,float* v,float v_min,float v_max,ImStr
 {
     return ImGui::SliderFloat(label,v,v_min,v_max,format,flags);
 }
-CIMGUI_API bool SigSliderFloat(const char* label,float* v,float v_min,float v_max,const char* format,ImGuiSliderFlags flags)
+CIMGUI_API bool igSliderFloat_Strv(const char* label,float* v,float v_min,float v_max,const char* format,ImGuiSliderFlags flags)
 {
     return ImGui::SliderFloat(label,v,v_min,v_max,format,flags);
 }
@@ -912,7 +912,7 @@ CIMGUI_API bool igSliderFloat2(ImStr label,float v[2],float v_min,float v_max,Im
 {
     return ImGui::SliderFloat2(label,v,v_min,v_max,format,flags);
 }
-CIMGUI_API bool SigSliderFloat2(const char* label,float v[2],float v_min,float v_max,const char* format,ImGuiSliderFlags flags)
+CIMGUI_API bool igSliderFloat2_Strv(const char* label,float v[2],float v_min,float v_max,const char* format,ImGuiSliderFlags flags)
 {
     return ImGui::SliderFloat2(label,v,v_min,v_max,format,flags);
 }
@@ -920,7 +920,7 @@ CIMGUI_API bool igSliderFloat3(ImStr label,float v[3],float v_min,float v_max,Im
 {
     return ImGui::SliderFloat3(label,v,v_min,v_max,format,flags);
 }
-CIMGUI_API bool SigSliderFloat3(const char* label,float v[3],float v_min,float v_max,const char* format,ImGuiSliderFlags flags)
+CIMGUI_API bool igSliderFloat3_Strv(const char* label,float v[3],float v_min,float v_max,const char* format,ImGuiSliderFlags flags)
 {
     return ImGui::SliderFloat3(label,v,v_min,v_max,format,flags);
 }
@@ -928,7 +928,7 @@ CIMGUI_API bool igSliderFloat4(ImStr label,float v[4],float v_min,float v_max,Im
 {
     return ImGui::SliderFloat4(label,v,v_min,v_max,format,flags);
 }
-CIMGUI_API bool SigSliderFloat4(const char* label,float v[4],float v_min,float v_max,const char* format,ImGuiSliderFlags flags)
+CIMGUI_API bool igSliderFloat4_Strv(const char* label,float v[4],float v_min,float v_max,const char* format,ImGuiSliderFlags flags)
 {
     return ImGui::SliderFloat4(label,v,v_min,v_max,format,flags);
 }
@@ -936,7 +936,7 @@ CIMGUI_API bool igSliderAngle(ImStr label,float* v_rad,float v_degrees_min,float
 {
     return ImGui::SliderAngle(label,v_rad,v_degrees_min,v_degrees_max,format,flags);
 }
-CIMGUI_API bool SigSliderAngle(const char* label,float* v_rad,float v_degrees_min,float v_degrees_max,const char* format,ImGuiSliderFlags flags)
+CIMGUI_API bool igSliderAngle_Strv(const char* label,float* v_rad,float v_degrees_min,float v_degrees_max,const char* format,ImGuiSliderFlags flags)
 {
     return ImGui::SliderAngle(label,v_rad,v_degrees_min,v_degrees_max,format,flags);
 }
@@ -944,7 +944,7 @@ CIMGUI_API bool igSliderInt(ImStr label,int* v,int v_min,int v_max,ImStr format,
 {
     return ImGui::SliderInt(label,v,v_min,v_max,format,flags);
 }
-CIMGUI_API bool SigSliderInt(const char* label,int* v,int v_min,int v_max,const char* format,ImGuiSliderFlags flags)
+CIMGUI_API bool igSliderInt_Strv(const char* label,int* v,int v_min,int v_max,const char* format,ImGuiSliderFlags flags)
 {
     return ImGui::SliderInt(label,v,v_min,v_max,format,flags);
 }
@@ -952,7 +952,7 @@ CIMGUI_API bool igSliderInt2(ImStr label,int v[2],int v_min,int v_max,ImStr form
 {
     return ImGui::SliderInt2(label,v,v_min,v_max,format,flags);
 }
-CIMGUI_API bool SigSliderInt2(const char* label,int v[2],int v_min,int v_max,const char* format,ImGuiSliderFlags flags)
+CIMGUI_API bool igSliderInt2_Strv(const char* label,int v[2],int v_min,int v_max,const char* format,ImGuiSliderFlags flags)
 {
     return ImGui::SliderInt2(label,v,v_min,v_max,format,flags);
 }
@@ -960,7 +960,7 @@ CIMGUI_API bool igSliderInt3(ImStr label,int v[3],int v_min,int v_max,ImStr form
 {
     return ImGui::SliderInt3(label,v,v_min,v_max,format,flags);
 }
-CIMGUI_API bool SigSliderInt3(const char* label,int v[3],int v_min,int v_max,const char* format,ImGuiSliderFlags flags)
+CIMGUI_API bool igSliderInt3_Strv(const char* label,int v[3],int v_min,int v_max,const char* format,ImGuiSliderFlags flags)
 {
     return ImGui::SliderInt3(label,v,v_min,v_max,format,flags);
 }
@@ -968,7 +968,7 @@ CIMGUI_API bool igSliderInt4(ImStr label,int v[4],int v_min,int v_max,ImStr form
 {
     return ImGui::SliderInt4(label,v,v_min,v_max,format,flags);
 }
-CIMGUI_API bool SigSliderInt4(const char* label,int v[4],int v_min,int v_max,const char* format,ImGuiSliderFlags flags)
+CIMGUI_API bool igSliderInt4_Strv(const char* label,int v[4],int v_min,int v_max,const char* format,ImGuiSliderFlags flags)
 {
     return ImGui::SliderInt4(label,v,v_min,v_max,format,flags);
 }
@@ -976,7 +976,7 @@ CIMGUI_API bool igSliderScalar(ImStr label,ImGuiDataType data_type,void* p_data,
 {
     return ImGui::SliderScalar(label,data_type,p_data,p_min,p_max,format,flags);
 }
-CIMGUI_API bool SigSliderScalar(const char* label,ImGuiDataType data_type,void* p_data,const void* p_min,const void* p_max,const char* format,ImGuiSliderFlags flags)
+CIMGUI_API bool igSliderScalar_Strv(const char* label,ImGuiDataType data_type,void* p_data,const void* p_min,const void* p_max,const char* format,ImGuiSliderFlags flags)
 {
     return ImGui::SliderScalar(label,data_type,p_data,p_min,p_max,format,flags);
 }
@@ -984,7 +984,7 @@ CIMGUI_API bool igSliderScalarN(ImStr label,ImGuiDataType data_type,void* p_data
 {
     return ImGui::SliderScalarN(label,data_type,p_data,components,p_min,p_max,format,flags);
 }
-CIMGUI_API bool SigSliderScalarN(const char* label,ImGuiDataType data_type,void* p_data,int components,const void* p_min,const void* p_max,const char* format,ImGuiSliderFlags flags)
+CIMGUI_API bool igSliderScalarN_Strv(const char* label,ImGuiDataType data_type,void* p_data,int components,const void* p_min,const void* p_max,const char* format,ImGuiSliderFlags flags)
 {
     return ImGui::SliderScalarN(label,data_type,p_data,components,p_min,p_max,format,flags);
 }
@@ -992,7 +992,7 @@ CIMGUI_API bool igVSliderFloat(ImStr label,const ImVec2 size,float* v,float v_mi
 {
     return ImGui::VSliderFloat(label,size,v,v_min,v_max,format,flags);
 }
-CIMGUI_API bool SigVSliderFloat(const char* label,const ImVec2 size,float* v,float v_min,float v_max,const char* format,ImGuiSliderFlags flags)
+CIMGUI_API bool igVSliderFloat_Strv(const char* label,const ImVec2 size,float* v,float v_min,float v_max,const char* format,ImGuiSliderFlags flags)
 {
     return ImGui::VSliderFloat(label,size,v,v_min,v_max,format,flags);
 }
@@ -1000,7 +1000,7 @@ CIMGUI_API bool igVSliderInt(ImStr label,const ImVec2 size,int* v,int v_min,int 
 {
     return ImGui::VSliderInt(label,size,v,v_min,v_max,format,flags);
 }
-CIMGUI_API bool SigVSliderInt(const char* label,const ImVec2 size,int* v,int v_min,int v_max,const char* format,ImGuiSliderFlags flags)
+CIMGUI_API bool igVSliderInt_Strv(const char* label,const ImVec2 size,int* v,int v_min,int v_max,const char* format,ImGuiSliderFlags flags)
 {
     return ImGui::VSliderInt(label,size,v,v_min,v_max,format,flags);
 }
@@ -1008,7 +1008,7 @@ CIMGUI_API bool igVSliderScalar(ImStr label,const ImVec2 size,ImGuiDataType data
 {
     return ImGui::VSliderScalar(label,size,data_type,p_data,p_min,p_max,format,flags);
 }
-CIMGUI_API bool SigVSliderScalar(const char* label,const ImVec2 size,ImGuiDataType data_type,void* p_data,const void* p_min,const void* p_max,const char* format,ImGuiSliderFlags flags)
+CIMGUI_API bool igVSliderScalar_Strv(const char* label,const ImVec2 size,ImGuiDataType data_type,void* p_data,const void* p_min,const void* p_max,const char* format,ImGuiSliderFlags flags)
 {
     return ImGui::VSliderScalar(label,size,data_type,p_data,p_min,p_max,format,flags);
 }
@@ -1016,7 +1016,7 @@ CIMGUI_API bool igInputText(ImStr label,char* buf,size_t buf_size,ImGuiInputText
 {
     return ImGui::InputText(label,buf,buf_size,flags,callback,user_data);
 }
-CIMGUI_API bool SigInputText(const char* label,char* buf,size_t buf_size,ImGuiInputTextFlags flags,ImGuiInputTextCallback callback,void* user_data)
+CIMGUI_API bool igInputText_Strv(const char* label,char* buf,size_t buf_size,ImGuiInputTextFlags flags,ImGuiInputTextCallback callback,void* user_data)
 {
     return ImGui::InputText(label,buf,buf_size,flags,callback,user_data);
 }
@@ -1024,7 +1024,7 @@ CIMGUI_API bool igInputTextMultiline(ImStr label,char* buf,size_t buf_size,const
 {
     return ImGui::InputTextMultiline(label,buf,buf_size,size,flags,callback,user_data);
 }
-CIMGUI_API bool SigInputTextMultiline(const char* label,char* buf,size_t buf_size,const ImVec2 size,ImGuiInputTextFlags flags,ImGuiInputTextCallback callback,void* user_data)
+CIMGUI_API bool igInputTextMultiline_Strv(const char* label,char* buf,size_t buf_size,const ImVec2 size,ImGuiInputTextFlags flags,ImGuiInputTextCallback callback,void* user_data)
 {
     return ImGui::InputTextMultiline(label,buf,buf_size,size,flags,callback,user_data);
 }
@@ -1032,7 +1032,7 @@ CIMGUI_API bool igInputTextWithHint(ImStr label,ImStr hint,char* buf,size_t buf_
 {
     return ImGui::InputTextWithHint(label,hint,buf,buf_size,flags,callback,user_data);
 }
-CIMGUI_API bool SigInputTextWithHint(const char* label,const char* hint,char* buf,size_t buf_size,ImGuiInputTextFlags flags,ImGuiInputTextCallback callback,void* user_data)
+CIMGUI_API bool igInputTextWithHint_Strv(const char* label,const char* hint,char* buf,size_t buf_size,ImGuiInputTextFlags flags,ImGuiInputTextCallback callback,void* user_data)
 {
     return ImGui::InputTextWithHint(label,hint,buf,buf_size,flags,callback,user_data);
 }
@@ -1040,7 +1040,7 @@ CIMGUI_API bool igInputFloat(ImStr label,float* v,float step,float step_fast,ImS
 {
     return ImGui::InputFloat(label,v,step,step_fast,format,flags);
 }
-CIMGUI_API bool SigInputFloat(const char* label,float* v,float step,float step_fast,const char* format,ImGuiInputTextFlags flags)
+CIMGUI_API bool igInputFloat_Strv(const char* label,float* v,float step,float step_fast,const char* format,ImGuiInputTextFlags flags)
 {
     return ImGui::InputFloat(label,v,step,step_fast,format,flags);
 }
@@ -1048,7 +1048,7 @@ CIMGUI_API bool igInputFloat2(ImStr label,float v[2],ImStr format,ImGuiInputText
 {
     return ImGui::InputFloat2(label,v,format,flags);
 }
-CIMGUI_API bool SigInputFloat2(const char* label,float v[2],const char* format,ImGuiInputTextFlags flags)
+CIMGUI_API bool igInputFloat2_Strv(const char* label,float v[2],const char* format,ImGuiInputTextFlags flags)
 {
     return ImGui::InputFloat2(label,v,format,flags);
 }
@@ -1056,7 +1056,7 @@ CIMGUI_API bool igInputFloat3(ImStr label,float v[3],ImStr format,ImGuiInputText
 {
     return ImGui::InputFloat3(label,v,format,flags);
 }
-CIMGUI_API bool SigInputFloat3(const char* label,float v[3],const char* format,ImGuiInputTextFlags flags)
+CIMGUI_API bool igInputFloat3_Strv(const char* label,float v[3],const char* format,ImGuiInputTextFlags flags)
 {
     return ImGui::InputFloat3(label,v,format,flags);
 }
@@ -1064,7 +1064,7 @@ CIMGUI_API bool igInputFloat4(ImStr label,float v[4],ImStr format,ImGuiInputText
 {
     return ImGui::InputFloat4(label,v,format,flags);
 }
-CIMGUI_API bool SigInputFloat4(const char* label,float v[4],const char* format,ImGuiInputTextFlags flags)
+CIMGUI_API bool igInputFloat4_Strv(const char* label,float v[4],const char* format,ImGuiInputTextFlags flags)
 {
     return ImGui::InputFloat4(label,v,format,flags);
 }
@@ -1072,7 +1072,7 @@ CIMGUI_API bool igInputInt(ImStr label,int* v,int step,int step_fast,ImGuiInputT
 {
     return ImGui::InputInt(label,v,step,step_fast,flags);
 }
-CIMGUI_API bool SigInputInt(const char* label,int* v,int step,int step_fast,ImGuiInputTextFlags flags)
+CIMGUI_API bool igInputInt_Strv(const char* label,int* v,int step,int step_fast,ImGuiInputTextFlags flags)
 {
     return ImGui::InputInt(label,v,step,step_fast,flags);
 }
@@ -1080,7 +1080,7 @@ CIMGUI_API bool igInputInt2(ImStr label,int v[2],ImGuiInputTextFlags flags)
 {
     return ImGui::InputInt2(label,v,flags);
 }
-CIMGUI_API bool SigInputInt2(const char* label,int v[2],ImGuiInputTextFlags flags)
+CIMGUI_API bool igInputInt2_Strv(const char* label,int v[2],ImGuiInputTextFlags flags)
 {
     return ImGui::InputInt2(label,v,flags);
 }
@@ -1088,7 +1088,7 @@ CIMGUI_API bool igInputInt3(ImStr label,int v[3],ImGuiInputTextFlags flags)
 {
     return ImGui::InputInt3(label,v,flags);
 }
-CIMGUI_API bool SigInputInt3(const char* label,int v[3],ImGuiInputTextFlags flags)
+CIMGUI_API bool igInputInt3_Strv(const char* label,int v[3],ImGuiInputTextFlags flags)
 {
     return ImGui::InputInt3(label,v,flags);
 }
@@ -1096,7 +1096,7 @@ CIMGUI_API bool igInputInt4(ImStr label,int v[4],ImGuiInputTextFlags flags)
 {
     return ImGui::InputInt4(label,v,flags);
 }
-CIMGUI_API bool SigInputInt4(const char* label,int v[4],ImGuiInputTextFlags flags)
+CIMGUI_API bool igInputInt4_Strv(const char* label,int v[4],ImGuiInputTextFlags flags)
 {
     return ImGui::InputInt4(label,v,flags);
 }
@@ -1104,7 +1104,7 @@ CIMGUI_API bool igInputDouble(ImStr label,double* v,double step,double step_fast
 {
     return ImGui::InputDouble(label,v,step,step_fast,format,flags);
 }
-CIMGUI_API bool SigInputDouble(const char* label,double* v,double step,double step_fast,const char* format,ImGuiInputTextFlags flags)
+CIMGUI_API bool igInputDouble_Strv(const char* label,double* v,double step,double step_fast,const char* format,ImGuiInputTextFlags flags)
 {
     return ImGui::InputDouble(label,v,step,step_fast,format,flags);
 }
@@ -1112,7 +1112,7 @@ CIMGUI_API bool igInputScalar(ImStr label,ImGuiDataType data_type,void* p_data,c
 {
     return ImGui::InputScalar(label,data_type,p_data,p_step,p_step_fast,format,flags);
 }
-CIMGUI_API bool SigInputScalar(const char* label,ImGuiDataType data_type,void* p_data,const void* p_step,const void* p_step_fast,const char* format,ImGuiInputTextFlags flags)
+CIMGUI_API bool igInputScalar_Strv(const char* label,ImGuiDataType data_type,void* p_data,const void* p_step,const void* p_step_fast,const char* format,ImGuiInputTextFlags flags)
 {
     return ImGui::InputScalar(label,data_type,p_data,p_step,p_step_fast,format,flags);
 }
@@ -1120,7 +1120,7 @@ CIMGUI_API bool igInputScalarN(ImStr label,ImGuiDataType data_type,void* p_data,
 {
     return ImGui::InputScalarN(label,data_type,p_data,components,p_step,p_step_fast,format,flags);
 }
-CIMGUI_API bool SigInputScalarN(const char* label,ImGuiDataType data_type,void* p_data,int components,const void* p_step,const void* p_step_fast,const char* format,ImGuiInputTextFlags flags)
+CIMGUI_API bool igInputScalarN_Strv(const char* label,ImGuiDataType data_type,void* p_data,int components,const void* p_step,const void* p_step_fast,const char* format,ImGuiInputTextFlags flags)
 {
     return ImGui::InputScalarN(label,data_type,p_data,components,p_step,p_step_fast,format,flags);
 }
@@ -1128,7 +1128,7 @@ CIMGUI_API bool igColorEdit3(ImStr label,float col[3],ImGuiColorEditFlags flags)
 {
     return ImGui::ColorEdit3(label,col,flags);
 }
-CIMGUI_API bool SigColorEdit3(const char* label,float col[3],ImGuiColorEditFlags flags)
+CIMGUI_API bool igColorEdit3_Strv(const char* label,float col[3],ImGuiColorEditFlags flags)
 {
     return ImGui::ColorEdit3(label,col,flags);
 }
@@ -1136,7 +1136,7 @@ CIMGUI_API bool igColorEdit4(ImStr label,float col[4],ImGuiColorEditFlags flags)
 {
     return ImGui::ColorEdit4(label,col,flags);
 }
-CIMGUI_API bool SigColorEdit4(const char* label,float col[4],ImGuiColorEditFlags flags)
+CIMGUI_API bool igColorEdit4_Strv(const char* label,float col[4],ImGuiColorEditFlags flags)
 {
     return ImGui::ColorEdit4(label,col,flags);
 }
@@ -1144,7 +1144,7 @@ CIMGUI_API bool igColorPicker3(ImStr label,float col[3],ImGuiColorEditFlags flag
 {
     return ImGui::ColorPicker3(label,col,flags);
 }
-CIMGUI_API bool SigColorPicker3(const char* label,float col[3],ImGuiColorEditFlags flags)
+CIMGUI_API bool igColorPicker3_Strv(const char* label,float col[3],ImGuiColorEditFlags flags)
 {
     return ImGui::ColorPicker3(label,col,flags);
 }
@@ -1152,7 +1152,7 @@ CIMGUI_API bool igColorPicker4(ImStr label,float col[4],ImGuiColorEditFlags flag
 {
     return ImGui::ColorPicker4(label,col,flags,ref_col);
 }
-CIMGUI_API bool SigColorPicker4(const char* label,float col[4],ImGuiColorEditFlags flags,const float* ref_col)
+CIMGUI_API bool igColorPicker4_Strv(const char* label,float col[4],ImGuiColorEditFlags flags,const float* ref_col)
 {
     return ImGui::ColorPicker4(label,col,flags,ref_col);
 }
@@ -1160,7 +1160,7 @@ CIMGUI_API bool igColorButton(ImStr desc_id,const ImVec4 col,ImGuiColorEditFlags
 {
     return ImGui::ColorButton(desc_id,col,flags,size);
 }
-CIMGUI_API bool SigColorButton(const char* desc_id,const ImVec4 col,ImGuiColorEditFlags flags,ImVec2 size)
+CIMGUI_API bool igColorButton_Strv(const char* desc_id,const ImVec4 col,ImGuiColorEditFlags flags,ImVec2 size)
 {
     return ImGui::ColorButton(desc_id,col,flags,size);
 }
@@ -1172,7 +1172,7 @@ CIMGUI_API bool igTreeNodeSTR(ImStr label)
 {
     return ImGui::TreeNode(label);
 }
-CIMGUI_API bool SigTreeNodeSTR(const char* label)
+CIMGUI_API bool igTreeNodeSTR_Strv(const char* label)
 {
     return ImGui::TreeNode(label);
 }
@@ -1184,7 +1184,7 @@ CIMGUI_API bool igTreeNodeSTRStr(ImStr str_id,const char* fmt,...)
     va_end(args);
     return ret;
 }
-CIMGUI_API bool SigTreeNodeSTRStr(const char* str_id,const char* fmt,...)
+CIMGUI_API bool igTreeNodeSTRStr_Strv(const char* str_id,const char* fmt,...)
 {
     va_list args;
     va_start(args, fmt);
@@ -1204,7 +1204,7 @@ CIMGUI_API bool igTreeNodeVSTR(ImStr str_id,const char* fmt,va_list args)
 {
     return ImGui::TreeNodeV(str_id,fmt,args);
 }
-CIMGUI_API bool SigTreeNodeVSTR(const char* str_id,const char* fmt,va_list args)
+CIMGUI_API bool igTreeNodeVSTR_Strv(const char* str_id,const char* fmt,va_list args)
 {
     return ImGui::TreeNodeV(str_id,fmt,args);
 }
@@ -1216,7 +1216,7 @@ CIMGUI_API bool igTreeNodeExSTR(ImStr label,ImGuiTreeNodeFlags flags)
 {
     return ImGui::TreeNodeEx(label,flags);
 }
-CIMGUI_API bool SigTreeNodeExSTR(const char* label,ImGuiTreeNodeFlags flags)
+CIMGUI_API bool igTreeNodeExSTR_Strv(const char* label,ImGuiTreeNodeFlags flags)
 {
     return ImGui::TreeNodeEx(label,flags);
 }
@@ -1228,7 +1228,7 @@ CIMGUI_API bool igTreeNodeExSTRStr(ImStr str_id,ImGuiTreeNodeFlags flags,const c
     va_end(args);
     return ret;
 }
-CIMGUI_API bool SigTreeNodeExSTRStr(const char* str_id,ImGuiTreeNodeFlags flags,const char* fmt,...)
+CIMGUI_API bool igTreeNodeExSTRStr_Strv(const char* str_id,ImGuiTreeNodeFlags flags,const char* fmt,...)
 {
     va_list args;
     va_start(args, fmt);
@@ -1248,7 +1248,7 @@ CIMGUI_API bool igTreeNodeExVSTR(ImStr str_id,ImGuiTreeNodeFlags flags,const cha
 {
     return ImGui::TreeNodeExV(str_id,flags,fmt,args);
 }
-CIMGUI_API bool SigTreeNodeExVSTR(const char* str_id,ImGuiTreeNodeFlags flags,const char* fmt,va_list args)
+CIMGUI_API bool igTreeNodeExVSTR_Strv(const char* str_id,ImGuiTreeNodeFlags flags,const char* fmt,va_list args)
 {
     return ImGui::TreeNodeExV(str_id,flags,fmt,args);
 }
@@ -1260,7 +1260,7 @@ CIMGUI_API void igTreePushSTR(ImStr str_id)
 {
     return ImGui::TreePush(str_id);
 }
-CIMGUI_API void SigTreePushSTR(const char* str_id)
+CIMGUI_API void igTreePushSTR_Strv(const char* str_id)
 {
     return ImGui::TreePush(str_id);
 }
@@ -1280,7 +1280,7 @@ CIMGUI_API bool igCollapsingHeaderTreeNodeFlags(ImStr label,ImGuiTreeNodeFlags f
 {
     return ImGui::CollapsingHeader(label,flags);
 }
-CIMGUI_API bool SigCollapsingHeaderTreeNodeFlags(const char* label,ImGuiTreeNodeFlags flags)
+CIMGUI_API bool igCollapsingHeaderTreeNodeFlags_Strv(const char* label,ImGuiTreeNodeFlags flags)
 {
     return ImGui::CollapsingHeader(label,flags);
 }
@@ -1288,7 +1288,7 @@ CIMGUI_API bool igCollapsingHeaderBoolPtr(ImStr label,bool* p_visible,ImGuiTreeN
 {
     return ImGui::CollapsingHeader(label,p_visible,flags);
 }
-CIMGUI_API bool SigCollapsingHeaderBoolPtr(const char* label,bool* p_visible,ImGuiTreeNodeFlags flags)
+CIMGUI_API bool igCollapsingHeaderBoolPtr_Strv(const char* label,bool* p_visible,ImGuiTreeNodeFlags flags)
 {
     return ImGui::CollapsingHeader(label,p_visible,flags);
 }
@@ -1300,7 +1300,7 @@ CIMGUI_API bool igSelectableBool(ImStr label,bool selected,ImGuiSelectableFlags 
 {
     return ImGui::Selectable(label,selected,flags,size);
 }
-CIMGUI_API bool SigSelectableBool(const char* label,bool selected,ImGuiSelectableFlags flags,const ImVec2 size)
+CIMGUI_API bool igSelectableBool_Strv(const char* label,bool selected,ImGuiSelectableFlags flags,const ImVec2 size)
 {
     return ImGui::Selectable(label,selected,flags,size);
 }
@@ -1308,7 +1308,7 @@ CIMGUI_API bool igSelectableBoolPtr(ImStr label,bool* p_selected,ImGuiSelectable
 {
     return ImGui::Selectable(label,p_selected,flags,size);
 }
-CIMGUI_API bool SigSelectableBoolPtr(const char* label,bool* p_selected,ImGuiSelectableFlags flags,const ImVec2 size)
+CIMGUI_API bool igSelectableBoolPtr_Strv(const char* label,bool* p_selected,ImGuiSelectableFlags flags,const ImVec2 size)
 {
     return ImGui::Selectable(label,p_selected,flags,size);
 }
@@ -1316,7 +1316,7 @@ CIMGUI_API bool igListBoxStr_arr(ImStr label,int* current_item,const char* const
 {
     return ImGui::ListBox(label,current_item,items,items_count,height_in_items);
 }
-CIMGUI_API bool SigListBoxStr_arr(const char* label,int* current_item,const char* const items[],int items_count,int height_in_items)
+CIMGUI_API bool igListBoxStr_arr_Strv(const char* label,int* current_item,const char* const items[],int items_count,int height_in_items)
 {
     return ImGui::ListBox(label,current_item,items,items_count,height_in_items);
 }
@@ -1324,7 +1324,7 @@ CIMGUI_API bool igListBoxFnBoolPtr(ImStr label,int* current_item,bool(*items_get
 {
     return ImGui::ListBox(label,current_item,items_getter,data,items_count,height_in_items);
 }
-CIMGUI_API bool SigListBoxFnBoolPtr(const char* label,int* current_item,bool(*items_getter)(void* data,int idx,const char** out_text),void* data,int items_count,int height_in_items)
+CIMGUI_API bool igListBoxFnBoolPtr_Strv(const char* label,int* current_item,bool(*items_getter)(void* data,int idx,const char** out_text),void* data,int items_count,int height_in_items)
 {
     return ImGui::ListBox(label,current_item,items_getter,data,items_count,height_in_items);
 }
@@ -1332,7 +1332,7 @@ CIMGUI_API bool igListBoxHeaderVec2(ImStr label,const ImVec2 size)
 {
     return ImGui::ListBoxHeader(label,size);
 }
-CIMGUI_API bool SigListBoxHeaderVec2(const char* label,const ImVec2 size)
+CIMGUI_API bool igListBoxHeaderVec2_Strv(const char* label,const ImVec2 size)
 {
     return ImGui::ListBoxHeader(label,size);
 }
@@ -1340,7 +1340,7 @@ CIMGUI_API bool igListBoxHeaderInt(ImStr label,int items_count,int height_in_ite
 {
     return ImGui::ListBoxHeader(label,items_count,height_in_items);
 }
-CIMGUI_API bool SigListBoxHeaderInt(const char* label,int items_count,int height_in_items)
+CIMGUI_API bool igListBoxHeaderInt_Strv(const char* label,int items_count,int height_in_items)
 {
     return ImGui::ListBoxHeader(label,items_count,height_in_items);
 }
@@ -1352,7 +1352,7 @@ CIMGUI_API void igPlotLinesFloatPtr(ImStr label,const float* values,int values_c
 {
     return ImGui::PlotLines(label,values,values_count,values_offset,overlay_text,scale_min,scale_max,graph_size,stride);
 }
-CIMGUI_API void SigPlotLinesFloatPtr(const char* label,const float* values,int values_count,int values_offset,const char* overlay_text,float scale_min,float scale_max,ImVec2 graph_size,int stride)
+CIMGUI_API void igPlotLinesFloatPtr_Strv(const char* label,const float* values,int values_count,int values_offset,const char* overlay_text,float scale_min,float scale_max,ImVec2 graph_size,int stride)
 {
     return ImGui::PlotLines(label,values,values_count,values_offset,overlay_text,scale_min,scale_max,graph_size,stride);
 }
@@ -1360,7 +1360,7 @@ CIMGUI_API void igPlotLinesFnFloatPtr(ImStr label,float(*values_getter)(void* da
 {
     return ImGui::PlotLines(label,values_getter,data,values_count,values_offset,overlay_text,scale_min,scale_max,graph_size);
 }
-CIMGUI_API void SigPlotLinesFnFloatPtr(const char* label,float(*values_getter)(void* data,int idx),void* data,int values_count,int values_offset,const char* overlay_text,float scale_min,float scale_max,ImVec2 graph_size)
+CIMGUI_API void igPlotLinesFnFloatPtr_Strv(const char* label,float(*values_getter)(void* data,int idx),void* data,int values_count,int values_offset,const char* overlay_text,float scale_min,float scale_max,ImVec2 graph_size)
 {
     return ImGui::PlotLines(label,values_getter,data,values_count,values_offset,overlay_text,scale_min,scale_max,graph_size);
 }
@@ -1368,7 +1368,7 @@ CIMGUI_API void igPlotHistogramFloatPtr(ImStr label,const float* values,int valu
 {
     return ImGui::PlotHistogram(label,values,values_count,values_offset,overlay_text,scale_min,scale_max,graph_size,stride);
 }
-CIMGUI_API void SigPlotHistogramFloatPtr(const char* label,const float* values,int values_count,int values_offset,const char* overlay_text,float scale_min,float scale_max,ImVec2 graph_size,int stride)
+CIMGUI_API void igPlotHistogramFloatPtr_Strv(const char* label,const float* values,int values_count,int values_offset,const char* overlay_text,float scale_min,float scale_max,ImVec2 graph_size,int stride)
 {
     return ImGui::PlotHistogram(label,values,values_count,values_offset,overlay_text,scale_min,scale_max,graph_size,stride);
 }
@@ -1376,7 +1376,7 @@ CIMGUI_API void igPlotHistogramFnFloatPtr(ImStr label,float(*values_getter)(void
 {
     return ImGui::PlotHistogram(label,values_getter,data,values_count,values_offset,overlay_text,scale_min,scale_max,graph_size);
 }
-CIMGUI_API void SigPlotHistogramFnFloatPtr(const char* label,float(*values_getter)(void* data,int idx),void* data,int values_count,int values_offset,const char* overlay_text,float scale_min,float scale_max,ImVec2 graph_size)
+CIMGUI_API void igPlotHistogramFnFloatPtr_Strv(const char* label,float(*values_getter)(void* data,int idx),void* data,int values_count,int values_offset,const char* overlay_text,float scale_min,float scale_max,ImVec2 graph_size)
 {
     return ImGui::PlotHistogram(label,values_getter,data,values_count,values_offset,overlay_text,scale_min,scale_max,graph_size);
 }
@@ -1384,7 +1384,7 @@ CIMGUI_API void igValueBool(ImStr prefix,bool b)
 {
     return ImGui::Value(prefix,b);
 }
-CIMGUI_API void SigValueBool(const char* prefix,bool b)
+CIMGUI_API void igValueBool_Strv(const char* prefix,bool b)
 {
     return ImGui::Value(prefix,b);
 }
@@ -1392,7 +1392,7 @@ CIMGUI_API void igValueInt(ImStr prefix,int v)
 {
     return ImGui::Value(prefix,v);
 }
-CIMGUI_API void SigValueInt(const char* prefix,int v)
+CIMGUI_API void igValueInt_Strv(const char* prefix,int v)
 {
     return ImGui::Value(prefix,v);
 }
@@ -1400,7 +1400,7 @@ CIMGUI_API void igValueUint(ImStr prefix,unsigned int v)
 {
     return ImGui::Value(prefix,v);
 }
-CIMGUI_API void SigValueUint(const char* prefix,unsigned int v)
+CIMGUI_API void igValueUint_Strv(const char* prefix,unsigned int v)
 {
     return ImGui::Value(prefix,v);
 }
@@ -1408,7 +1408,7 @@ CIMGUI_API void igValueFloat(ImStr prefix,float v,ImStr float_format)
 {
     return ImGui::Value(prefix,v,float_format);
 }
-CIMGUI_API void SigValueFloat(const char* prefix,float v,const char* float_format)
+CIMGUI_API void igValueFloat_Strv(const char* prefix,float v,const char* float_format)
 {
     return ImGui::Value(prefix,v,float_format);
 }
@@ -1432,7 +1432,7 @@ CIMGUI_API bool igBeginMenu(ImStr label,bool enabled)
 {
     return ImGui::BeginMenu(label,enabled);
 }
-CIMGUI_API bool SigBeginMenu(const char* label,bool enabled)
+CIMGUI_API bool igBeginMenu_Strv(const char* label,bool enabled)
 {
     return ImGui::BeginMenu(label,enabled);
 }
@@ -1444,7 +1444,7 @@ CIMGUI_API bool igMenuItemBool(ImStr label,ImStr shortcut,bool selected,bool ena
 {
     return ImGui::MenuItem(label,shortcut,selected,enabled);
 }
-CIMGUI_API bool SigMenuItemBool(const char* label,const char* shortcut,bool selected,bool enabled)
+CIMGUI_API bool igMenuItemBool_Strv(const char* label,const char* shortcut,bool selected,bool enabled)
 {
     return ImGui::MenuItem(label,shortcut,selected,enabled);
 }
@@ -1452,7 +1452,7 @@ CIMGUI_API bool igMenuItemBoolPtr(ImStr label,ImStr shortcut,bool* p_selected,bo
 {
     return ImGui::MenuItem(label,shortcut,p_selected,enabled);
 }
-CIMGUI_API bool SigMenuItemBoolPtr(const char* label,const char* shortcut,bool* p_selected,bool enabled)
+CIMGUI_API bool igMenuItemBoolPtr_Strv(const char* label,const char* shortcut,bool* p_selected,bool enabled)
 {
     return ImGui::MenuItem(label,shortcut,p_selected,enabled);
 }
@@ -1479,7 +1479,7 @@ CIMGUI_API bool igBeginPopup(ImStr str_id,ImGuiWindowFlags flags)
 {
     return ImGui::BeginPopup(str_id,flags);
 }
-CIMGUI_API bool SigBeginPopup(const char* str_id,ImGuiWindowFlags flags)
+CIMGUI_API bool igBeginPopup_Strv(const char* str_id,ImGuiWindowFlags flags)
 {
     return ImGui::BeginPopup(str_id,flags);
 }
@@ -1487,7 +1487,7 @@ CIMGUI_API bool igBeginPopupModal(ImStr name,bool* p_open,ImGuiWindowFlags flags
 {
     return ImGui::BeginPopupModal(name,p_open,flags);
 }
-CIMGUI_API bool SigBeginPopupModal(const char* name,bool* p_open,ImGuiWindowFlags flags)
+CIMGUI_API bool igBeginPopupModal_Strv(const char* name,bool* p_open,ImGuiWindowFlags flags)
 {
     return ImGui::BeginPopupModal(name,p_open,flags);
 }
@@ -1499,7 +1499,7 @@ CIMGUI_API void igOpenPopup(ImStr str_id,ImGuiPopupFlags popup_flags)
 {
     return ImGui::OpenPopup(str_id,popup_flags);
 }
-CIMGUI_API void SigOpenPopup(const char* str_id,ImGuiPopupFlags popup_flags)
+CIMGUI_API void igOpenPopup_Strv(const char* str_id,ImGuiPopupFlags popup_flags)
 {
     return ImGui::OpenPopup(str_id,popup_flags);
 }
@@ -1507,7 +1507,7 @@ CIMGUI_API void igOpenPopupOnItemClick(ImStr str_id,ImGuiPopupFlags popup_flags)
 {
     return ImGui::OpenPopupOnItemClick(str_id,popup_flags);
 }
-CIMGUI_API void SigOpenPopupOnItemClick(const char* str_id,ImGuiPopupFlags popup_flags)
+CIMGUI_API void igOpenPopupOnItemClick_Strv(const char* str_id,ImGuiPopupFlags popup_flags)
 {
     return ImGui::OpenPopupOnItemClick(str_id,popup_flags);
 }
@@ -1519,7 +1519,7 @@ CIMGUI_API bool igBeginPopupContextItem(ImStr str_id,ImGuiPopupFlags popup_flags
 {
     return ImGui::BeginPopupContextItem(str_id,popup_flags);
 }
-CIMGUI_API bool SigBeginPopupContextItem(const char* str_id,ImGuiPopupFlags popup_flags)
+CIMGUI_API bool igBeginPopupContextItem_Strv(const char* str_id,ImGuiPopupFlags popup_flags)
 {
     return ImGui::BeginPopupContextItem(str_id,popup_flags);
 }
@@ -1527,7 +1527,7 @@ CIMGUI_API bool igBeginPopupContextWindow(ImStr str_id,ImGuiPopupFlags popup_fla
 {
     return ImGui::BeginPopupContextWindow(str_id,popup_flags);
 }
-CIMGUI_API bool SigBeginPopupContextWindow(const char* str_id,ImGuiPopupFlags popup_flags)
+CIMGUI_API bool igBeginPopupContextWindow_Strv(const char* str_id,ImGuiPopupFlags popup_flags)
 {
     return ImGui::BeginPopupContextWindow(str_id,popup_flags);
 }
@@ -1535,7 +1535,7 @@ CIMGUI_API bool igBeginPopupContextVoid(ImStr str_id,ImGuiPopupFlags popup_flags
 {
     return ImGui::BeginPopupContextVoid(str_id,popup_flags);
 }
-CIMGUI_API bool SigBeginPopupContextVoid(const char* str_id,ImGuiPopupFlags popup_flags)
+CIMGUI_API bool igBeginPopupContextVoid_Strv(const char* str_id,ImGuiPopupFlags popup_flags)
 {
     return ImGui::BeginPopupContextVoid(str_id,popup_flags);
 }
@@ -1543,7 +1543,7 @@ CIMGUI_API bool igIsPopupOpenSTR(ImStr str_id,ImGuiPopupFlags flags)
 {
     return ImGui::IsPopupOpen(str_id,flags);
 }
-CIMGUI_API bool SigIsPopupOpenSTR(const char* str_id,ImGuiPopupFlags flags)
+CIMGUI_API bool igIsPopupOpenSTR_Strv(const char* str_id,ImGuiPopupFlags flags)
 {
     return ImGui::IsPopupOpen(str_id,flags);
 }
@@ -1551,7 +1551,7 @@ CIMGUI_API bool igBeginTable(ImStr str_id,int column,ImGuiTableFlags flags,const
 {
     return ImGui::BeginTable(str_id,column,flags,outer_size,inner_width);
 }
-CIMGUI_API bool SigBeginTable(const char* str_id,int column,ImGuiTableFlags flags,const ImVec2 outer_size,float inner_width)
+CIMGUI_API bool igBeginTable_Strv(const char* str_id,int column,ImGuiTableFlags flags,const ImVec2 outer_size,float inner_width)
 {
     return ImGui::BeginTable(str_id,column,flags,outer_size,inner_width);
 }
@@ -1575,7 +1575,7 @@ CIMGUI_API void igTableSetupColumn(ImStr label,ImGuiTableColumnFlags flags,float
 {
     return ImGui::TableSetupColumn(label,flags,init_width_or_weight,user_id);
 }
-CIMGUI_API void SigTableSetupColumn(const char* label,ImGuiTableColumnFlags flags,float init_width_or_weight,ImU32 user_id)
+CIMGUI_API void igTableSetupColumn_Strv(const char* label,ImGuiTableColumnFlags flags,float init_width_or_weight,ImU32 user_id)
 {
     return ImGui::TableSetupColumn(label,flags,init_width_or_weight,user_id);
 }
@@ -1591,7 +1591,7 @@ CIMGUI_API void igTableHeader(ImStr label)
 {
     return ImGui::TableHeader(label);
 }
-CIMGUI_API void SigTableHeader(const char* label)
+CIMGUI_API void igTableHeader_Strv(const char* label)
 {
     return ImGui::TableHeader(label);
 }
@@ -1627,7 +1627,7 @@ CIMGUI_API void igColumns(int count,ImStr id,bool border)
 {
     return ImGui::Columns(count,id,border);
 }
-CIMGUI_API void SigColumns(int count,const char* id,bool border)
+CIMGUI_API void igColumns_Strv(int count,const char* id,bool border)
 {
     return ImGui::Columns(count,id,border);
 }
@@ -1663,7 +1663,7 @@ CIMGUI_API bool igBeginTabBar(ImStr str_id,ImGuiTabBarFlags flags)
 {
     return ImGui::BeginTabBar(str_id,flags);
 }
-CIMGUI_API bool SigBeginTabBar(const char* str_id,ImGuiTabBarFlags flags)
+CIMGUI_API bool igBeginTabBar_Strv(const char* str_id,ImGuiTabBarFlags flags)
 {
     return ImGui::BeginTabBar(str_id,flags);
 }
@@ -1675,7 +1675,7 @@ CIMGUI_API bool igBeginTabItem(ImStr label,bool* p_open,ImGuiTabItemFlags flags)
 {
     return ImGui::BeginTabItem(label,p_open,flags);
 }
-CIMGUI_API bool SigBeginTabItem(const char* label,bool* p_open,ImGuiTabItemFlags flags)
+CIMGUI_API bool igBeginTabItem_Strv(const char* label,bool* p_open,ImGuiTabItemFlags flags)
 {
     return ImGui::BeginTabItem(label,p_open,flags);
 }
@@ -1687,7 +1687,7 @@ CIMGUI_API bool igTabItemButton(ImStr label,ImGuiTabItemFlags flags)
 {
     return ImGui::TabItemButton(label,flags);
 }
-CIMGUI_API bool SigTabItemButton(const char* label,ImGuiTabItemFlags flags)
+CIMGUI_API bool igTabItemButton_Strv(const char* label,ImGuiTabItemFlags flags)
 {
     return ImGui::TabItemButton(label,flags);
 }
@@ -1695,7 +1695,7 @@ CIMGUI_API void igSetTabItemClosed(ImStr tab_or_docked_window_label)
 {
     return ImGui::SetTabItemClosed(tab_or_docked_window_label);
 }
-CIMGUI_API void SigSetTabItemClosed(const char* tab_or_docked_window_label)
+CIMGUI_API void igSetTabItemClosed_Strv(const char* tab_or_docked_window_label)
 {
     return ImGui::SetTabItemClosed(tab_or_docked_window_label);
 }
@@ -1707,7 +1707,7 @@ CIMGUI_API void igLogToFile(int auto_open_depth,ImStr filename)
 {
     return ImGui::LogToFile(auto_open_depth,filename);
 }
-CIMGUI_API void SigLogToFile(int auto_open_depth,const char* filename)
+CIMGUI_API void igLogToFile_Strv(int auto_open_depth,const char* filename)
 {
     return ImGui::LogToFile(auto_open_depth,filename);
 }
@@ -1731,7 +1731,7 @@ CIMGUI_API bool igSetDragDropPayload(ImStr type,const void* data,size_t sz,ImGui
 {
     return ImGui::SetDragDropPayload(type,data,sz,cond);
 }
-CIMGUI_API bool SigSetDragDropPayload(const char* type,const void* data,size_t sz,ImGuiCond cond)
+CIMGUI_API bool igSetDragDropPayload_Strv(const char* type,const void* data,size_t sz,ImGuiCond cond)
 {
     return ImGui::SetDragDropPayload(type,data,sz,cond);
 }
@@ -1747,7 +1747,7 @@ CIMGUI_API const ImGuiPayload* igAcceptDragDropPayload(ImStr type,ImGuiDragDropF
 {
     return ImGui::AcceptDragDropPayload(type,flags);
 }
-CIMGUI_API const ImGuiPayload* SigAcceptDragDropPayload(const char* type,ImGuiDragDropFlags flags)
+CIMGUI_API const ImGuiPayload* igAcceptDragDropPayload_Strv(const char* type,ImGuiDragDropFlags flags)
 {
     return ImGui::AcceptDragDropPayload(type,flags);
 }
@@ -1899,7 +1899,7 @@ CIMGUI_API void igCalcTextSizeSTR(ImVec2 *pOut,ImStr text,bool hide_text_after_d
 {
     *pOut = ImGui::CalcTextSize(text,hide_text_after_double_hash,wrap_width);
 }
-CIMGUI_API void SigCalcTextSizeSTR(ImVec2 *pOut,const char* text,bool hide_text_after_double_hash,float wrap_width)
+CIMGUI_API void igCalcTextSizeSTR_Strv(ImVec2 *pOut,const char* text,bool hide_text_after_double_hash,float wrap_width)
 {
     *pOut = ImGui::CalcTextSize(text,hide_text_after_double_hash,wrap_width);
 }
@@ -2015,7 +2015,7 @@ CIMGUI_API void igSetClipboardText(ImStr text)
 {
     return ImGui::SetClipboardText(text);
 }
-CIMGUI_API void SigSetClipboardText(const char* text)
+CIMGUI_API void igSetClipboardText_Strv(const char* text)
 {
     return ImGui::SetClipboardText(text);
 }
@@ -2023,7 +2023,7 @@ CIMGUI_API void igLoadIniSettingsFromDisk(ImStr ini_filename)
 {
     return ImGui::LoadIniSettingsFromDisk(ini_filename);
 }
-CIMGUI_API void SigLoadIniSettingsFromDisk(const char* ini_filename)
+CIMGUI_API void igLoadIniSettingsFromDisk_Strv(const char* ini_filename)
 {
     return ImGui::LoadIniSettingsFromDisk(ini_filename);
 }
@@ -2031,7 +2031,7 @@ CIMGUI_API void igLoadIniSettingsFromMemory(ImStr ini_data)
 {
     return ImGui::LoadIniSettingsFromMemory(ini_data);
 }
-CIMGUI_API void SigLoadIniSettingsFromMemory(const char* ini_data)
+CIMGUI_API void igLoadIniSettingsFromMemory_Strv(const char* ini_data)
 {
     return ImGui::LoadIniSettingsFromMemory(ini_data);
 }
@@ -2039,7 +2039,7 @@ CIMGUI_API void igSaveIniSettingsToDisk(ImStr ini_filename)
 {
     return ImGui::SaveIniSettingsToDisk(ini_filename);
 }
-CIMGUI_API void SigSaveIniSettingsToDisk(const char* ini_filename)
+CIMGUI_API void igSaveIniSettingsToDisk_Strv(const char* ini_filename)
 {
     return ImGui::SaveIniSettingsToDisk(ini_filename);
 }
@@ -2051,7 +2051,7 @@ CIMGUI_API bool igDebugCheckVersionAndDataLayout(ImStr version_str,size_t sz_io,
 {
     return ImGui::DebugCheckVersionAndDataLayout(version_str,sz_io,sz_style,sz_vec2,sz_vec4,sz_drawvert,sz_drawidx);
 }
-CIMGUI_API bool SigDebugCheckVersionAndDataLayout(const char* version_str,size_t sz_io,size_t sz_style,size_t sz_vec2,size_t sz_vec4,size_t sz_drawvert,size_t sz_drawidx)
+CIMGUI_API bool igDebugCheckVersionAndDataLayout_Strv(const char* version_str,size_t sz_io,size_t sz_style,size_t sz_vec2,size_t sz_vec4,size_t sz_drawvert,size_t sz_drawidx)
 {
     return ImGui::DebugCheckVersionAndDataLayout(version_str,sz_io,sz_style,sz_vec2,sz_vec4,sz_drawvert,sz_drawidx);
 }
@@ -2119,7 +2119,7 @@ CIMGUI_API void ImGuiInputTextCallbackData_InsertCharsSTR(ImGuiInputTextCallback
 {
     return self->InsertChars(pos,text);
 }
-CIMGUI_API void SImGuiInputTextCallbackData_InsertCharsSTR(ImGuiInputTextCallbackData* self,int pos,const char* text)
+CIMGUI_API void ImGuiInputTextCallbackData_InsertCharsSTR_Strv(ImGuiInputTextCallbackData* self,int pos,const char* text)
 {
     return self->InsertChars(pos,text);
 }
@@ -2155,7 +2155,7 @@ CIMGUI_API bool ImGuiPayload_IsDataType(ImGuiPayload* self,ImStr type)
 {
     return self->IsDataType(type);
 }
-CIMGUI_API bool SImGuiPayload_IsDataType(ImGuiPayload* self,const char* type)
+CIMGUI_API bool ImGuiPayload_IsDataType_Strv(ImGuiPayload* self,const char* type)
 {
     return self->IsDataType(type);
 }
@@ -2199,7 +2199,7 @@ CIMGUI_API void ImGuiTextFilter_destroy(ImGuiTextFilter* self)
 {
     IM_DELETE(self);
 }
-CIMGUI_API ImGuiTextFilter* SImGuiTextFilter_ImGuiTextFilter(const char* default_filter)
+CIMGUI_API ImGuiTextFilter* ImGuiTextFilter_ImGuiTextFilter_Strv(const char* default_filter)
 {
     return IM_NEW(ImGuiTextFilter)(default_filter);
 }
@@ -2207,7 +2207,7 @@ CIMGUI_API bool ImGuiTextFilter_Draw(ImGuiTextFilter* self,ImStr label,float wid
 {
     return self->Draw(label,width);
 }
-CIMGUI_API bool SImGuiTextFilter_Draw(ImGuiTextFilter* self,const char* label,float width)
+CIMGUI_API bool ImGuiTextFilter_Draw_Strv(ImGuiTextFilter* self,const char* label,float width)
 {
     return self->Draw(label,width);
 }
@@ -2215,7 +2215,7 @@ CIMGUI_API bool ImGuiTextFilter_PassFilterSTR(ImGuiTextFilter* self,ImStr text)
 {
     return self->PassFilter(text);
 }
-CIMGUI_API bool SImGuiTextFilter_PassFilterSTR(ImGuiTextFilter* self,const char* text)
+CIMGUI_API bool ImGuiTextFilter_PassFilterSTR_Strv(ImGuiTextFilter* self,const char* text)
 {
     return self->PassFilter(text);
 }
@@ -2275,7 +2275,7 @@ CIMGUI_API void ImGuiTextBuffer_appendSTR(ImGuiTextBuffer* self,ImStr str)
 {
     return self->append(str);
 }
-CIMGUI_API void SImGuiTextBuffer_appendSTR(ImGuiTextBuffer* self,const char* str)
+CIMGUI_API void ImGuiTextBuffer_appendSTR_Strv(ImGuiTextBuffer* self,const char* str)
 {
     return self->append(str);
 }
@@ -2539,7 +2539,7 @@ CIMGUI_API void ImDrawList_AddTextVec2U32STR(ImDrawList* self,const ImVec2 pos,I
 {
     return self->AddText(pos,col,text);
 }
-CIMGUI_API void SImDrawList_AddTextVec2U32STR(ImDrawList* self,const ImVec2 pos,ImU32 col,const char* text)
+CIMGUI_API void ImDrawList_AddTextVec2U32STR_Strv(ImDrawList* self,const ImVec2 pos,ImU32 col,const char* text)
 {
     return self->AddText(pos,col,text);
 }
@@ -2551,7 +2551,7 @@ CIMGUI_API void ImDrawList_AddTextFontPtrFloatVec2STR(ImDrawList* self,const ImF
 {
     return self->AddText(font,font_size,pos,col,text,wrap_width,cpu_fine_clip_rect);
 }
-CIMGUI_API void SImDrawList_AddTextFontPtrFloatVec2STR(ImDrawList* self,const ImFont* font,float font_size,const ImVec2 pos,ImU32 col,const char* text,float wrap_width,const ImVec4* cpu_fine_clip_rect)
+CIMGUI_API void ImDrawList_AddTextFontPtrFloatVec2STR_Strv(ImDrawList* self,const ImFont* font,float font_size,const ImVec2 pos,ImU32 col,const char* text,float wrap_width,const ImVec4* cpu_fine_clip_rect)
 {
     return self->AddText(font,font_size,pos,col,text,wrap_width,cpu_fine_clip_rect);
 }
@@ -2763,7 +2763,7 @@ CIMGUI_API void ImFontGlyphRangesBuilder_AddTextSTR(ImFontGlyphRangesBuilder* se
 {
     return self->AddText(text);
 }
-CIMGUI_API void SImFontGlyphRangesBuilder_AddTextSTR(ImFontGlyphRangesBuilder* self,const char* text)
+CIMGUI_API void ImFontGlyphRangesBuilder_AddTextSTR_Strv(ImFontGlyphRangesBuilder* self,const char* text)
 {
     return self->AddText(text);
 }
@@ -2811,7 +2811,7 @@ CIMGUI_API ImFont* ImFontAtlas_AddFontFromFileTTF(ImFontAtlas* self,ImStr filena
 {
     return self->AddFontFromFileTTF(filename,size_pixels,font_cfg,glyph_ranges);
 }
-CIMGUI_API ImFont* SImFontAtlas_AddFontFromFileTTF(ImFontAtlas* self,const char* filename,float size_pixels,const ImFontConfig* font_cfg,const ImWchar* glyph_ranges)
+CIMGUI_API ImFont* ImFontAtlas_AddFontFromFileTTF_Strv(ImFontAtlas* self,const char* filename,float size_pixels,const ImFontConfig* font_cfg,const ImWchar* glyph_ranges)
 {
     return self->AddFontFromFileTTF(filename,size_pixels,font_cfg,glyph_ranges);
 }
@@ -2827,7 +2827,7 @@ CIMGUI_API ImFont* ImFontAtlas_AddFontFromMemoryCompressedBase85TTF(ImFontAtlas*
 {
     return self->AddFontFromMemoryCompressedBase85TTF(compressed_font_data_base85,size_pixels,font_cfg,glyph_ranges);
 }
-CIMGUI_API ImFont* SImFontAtlas_AddFontFromMemoryCompressedBase85TTF(ImFontAtlas* self,const char* compressed_font_data_base85,float size_pixels,const ImFontConfig* font_cfg,const ImWchar* glyph_ranges)
+CIMGUI_API ImFont* ImFontAtlas_AddFontFromMemoryCompressedBase85TTF_Strv(ImFontAtlas* self,const char* compressed_font_data_base85,float size_pixels,const ImFontConfig* font_cfg,const ImWchar* glyph_ranges)
 {
     return self->AddFontFromMemoryCompressedBase85TTF(compressed_font_data_base85,size_pixels,font_cfg,glyph_ranges);
 }
@@ -2951,7 +2951,7 @@ CIMGUI_API void ImFont_CalcTextSizeASTR(ImVec2 *pOut,ImFont* self,float size,flo
 {
     *pOut = self->CalcTextSizeA(size,max_width,wrap_width,text,remaining);
 }
-CIMGUI_API void SImFont_CalcTextSizeASTR(ImVec2 *pOut,ImFont* self,float size,float max_width,float wrap_width,const char* text,const char** remaining)
+CIMGUI_API void ImFont_CalcTextSizeASTR_Strv(ImVec2 *pOut,ImFont* self,float size,float max_width,float wrap_width,const char* text,const char** remaining)
 {
     *pOut = self->CalcTextSizeA(size,max_width,wrap_width,text,remaining);
 }
@@ -2963,7 +2963,7 @@ CIMGUI_API const char* ImFont_CalcWordWrapPositionASTR(ImFont* self,float scale,
 {
     return self->CalcWordWrapPositionA(scale,text,wrap_width);
 }
-CIMGUI_API const char* SImFont_CalcWordWrapPositionASTR(ImFont* self,float scale,const char* text,float wrap_width)
+CIMGUI_API const char* ImFont_CalcWordWrapPositionASTR_Strv(ImFont* self,float scale,const char* text,float wrap_width)
 {
     return self->CalcWordWrapPositionA(scale,text,wrap_width);
 }
@@ -2979,7 +2979,7 @@ CIMGUI_API void ImFont_RenderTextSTR(ImFont* self,ImDrawList* draw_list,float si
 {
     return self->RenderText(draw_list,size,pos,col,clip_rect,text,wrap_width,cpu_fine_clip);
 }
-CIMGUI_API void SImFont_RenderTextSTR(ImFont* self,ImDrawList* draw_list,float size,ImVec2 pos,ImU32 col,const ImVec4 clip_rect,const char* text,float wrap_width,bool cpu_fine_clip)
+CIMGUI_API void ImFont_RenderTextSTR_Strv(ImFont* self,ImDrawList* draw_list,float size,ImVec2 pos,ImU32 col,const ImVec4 clip_rect,const char* text,float wrap_width,bool cpu_fine_clip)
 {
     return self->RenderText(draw_list,size,pos,col,clip_rect,text,wrap_width,cpu_fine_clip);
 }
@@ -3027,7 +3027,7 @@ CIMGUI_API ImGuiID igImHashStrSTR(ImStr str,ImU32 seed)
 {
     return ImHashStr(str,seed);
 }
-CIMGUI_API ImGuiID SigImHashStrSTR(const char* str,ImU32 seed)
+CIMGUI_API ImGuiID igImHashStrSTR_Strv(const char* str,ImU32 seed)
 {
     return ImHashStr(str,seed);
 }
@@ -3115,7 +3115,7 @@ CIMGUI_API const char* igImStrstr(ImStr haystack,ImStr needle)
 {
     return ImStrstr(haystack,needle);
 }
-CIMGUI_API const char* SigImStrstr(const char* haystack,const char* needle)
+CIMGUI_API const char* igImStrstr_Strv(const char* haystack,const char* needle)
 {
     return ImStrstr(haystack,needle);
 }
@@ -3191,7 +3191,7 @@ CIMGUI_API ImFileHandle igImFileOpen(ImStr filename,ImStr mode)
 {
     return ImFileOpen(filename,mode);
 }
-CIMGUI_API ImFileHandle SigImFileOpen(const char* filename,const char* mode)
+CIMGUI_API ImFileHandle igImFileOpen_Strv(const char* filename,const char* mode)
 {
     return ImFileOpen(filename,mode);
 }
@@ -3215,7 +3215,7 @@ CIMGUI_API void* igImFileLoadToMemory(ImStr filename,ImStr mode,size_t* out_file
 {
     return ImFileLoadToMemory(filename,mode,out_file_size,padding_bytes);
 }
-CIMGUI_API void* SigImFileLoadToMemory(const char* filename,const char* mode,size_t* out_file_size,int padding_bytes)
+CIMGUI_API void* igImFileLoadToMemory_Strv(const char* filename,const char* mode,size_t* out_file_size,int padding_bytes)
 {
     return ImFileLoadToMemory(filename,mode,out_file_size,padding_bytes);
 }
@@ -3783,7 +3783,7 @@ CIMGUI_API void ImGuiWindow_destroy(ImGuiWindow* self)
 {
     IM_DELETE(self);
 }
-CIMGUI_API ImGuiWindow* SImGuiWindow_ImGuiWindow(ImGuiContext* context,const char* name)
+CIMGUI_API ImGuiWindow* ImGuiWindow_ImGuiWindow_Strv(ImGuiContext* context,const char* name)
 {
     return IM_NEW(ImGuiWindow)(context,name);
 }
@@ -3811,7 +3811,7 @@ CIMGUI_API ImGuiID ImGuiWindow_GetIDNoKeepAliveSTR(ImGuiWindow* self,ImStr str)
 {
     return self->GetIDNoKeepAlive(str);
 }
-CIMGUI_API ImGuiID SImGuiWindow_GetIDNoKeepAliveSTR(ImGuiWindow* self,const char* str)
+CIMGUI_API ImGuiID ImGuiWindow_GetIDNoKeepAliveSTR_Strv(ImGuiWindow* self,const char* str)
 {
     return self->GetIDNoKeepAlive(str);
 }
@@ -3947,7 +3947,7 @@ CIMGUI_API ImGuiWindow* igFindWindowByName(ImStr name)
 {
     return ImGui::FindWindowByName(name);
 }
-CIMGUI_API ImGuiWindow* SigFindWindowByName(const char* name)
+CIMGUI_API ImGuiWindow* igFindWindowByName_Strv(const char* name)
 {
     return ImGui::FindWindowByName(name);
 }
@@ -4075,7 +4075,7 @@ CIMGUI_API ImGuiWindowSettings* igCreateNewWindowSettings(ImStr name)
 {
     return ImGui::CreateNewWindowSettings(name);
 }
-CIMGUI_API ImGuiWindowSettings* SigCreateNewWindowSettings(const char* name)
+CIMGUI_API ImGuiWindowSettings* igCreateNewWindowSettings_Strv(const char* name)
 {
     return ImGui::CreateNewWindowSettings(name);
 }
@@ -4087,7 +4087,7 @@ CIMGUI_API ImGuiWindowSettings* igFindOrCreateWindowSettings(ImStr name)
 {
     return ImGui::FindOrCreateWindowSettings(name);
 }
-CIMGUI_API ImGuiWindowSettings* SigFindOrCreateWindowSettings(const char* name)
+CIMGUI_API ImGuiWindowSettings* igFindOrCreateWindowSettings_Strv(const char* name)
 {
     return ImGui::FindOrCreateWindowSettings(name);
 }
@@ -4095,7 +4095,7 @@ CIMGUI_API ImGuiSettingsHandler* igFindSettingsHandler(ImStr type_name)
 {
     return ImGui::FindSettingsHandler(type_name);
 }
-CIMGUI_API ImGuiSettingsHandler* SigFindSettingsHandler(const char* type_name)
+CIMGUI_API ImGuiSettingsHandler* igFindSettingsHandler_Strv(const char* type_name)
 {
     return ImGui::FindSettingsHandler(type_name);
 }
@@ -4255,7 +4255,7 @@ CIMGUI_API bool igBeginChildEx(ImStr name,ImGuiID id,const ImVec2 size_arg,bool 
 {
     return ImGui::BeginChildEx(name,id,size_arg,border,flags);
 }
-CIMGUI_API bool SigBeginChildEx(const char* name,ImGuiID id,const ImVec2 size_arg,bool border,ImGuiWindowFlags flags)
+CIMGUI_API bool igBeginChildEx_Strv(const char* name,ImGuiID id,const ImVec2 size_arg,bool border,ImGuiWindowFlags flags)
 {
     return ImGui::BeginChildEx(name,id,size_arg,border,flags);
 }
@@ -4411,7 +4411,7 @@ CIMGUI_API void igBeginColumns(ImStr str_id,int count,ImGuiOldColumnFlags flags)
 {
     return ImGui::BeginColumns(str_id,count,flags);
 }
-CIMGUI_API void SigBeginColumns(const char* str_id,int count,ImGuiOldColumnFlags flags)
+CIMGUI_API void igBeginColumns_Strv(const char* str_id,int count,ImGuiOldColumnFlags flags)
 {
     return ImGui::BeginColumns(str_id,count,flags);
 }
@@ -4435,7 +4435,7 @@ CIMGUI_API ImGuiID igGetColumnsID(ImStr str_id,int count)
 {
     return ImGui::GetColumnsID(str_id,count);
 }
-CIMGUI_API ImGuiID SigGetColumnsID(const char* str_id,int count)
+CIMGUI_API ImGuiID igGetColumnsID_Strv(const char* str_id,int count)
 {
     return ImGui::GetColumnsID(str_id,count);
 }
@@ -4487,7 +4487,7 @@ CIMGUI_API bool igBeginTableEx(ImStr name,ImGuiID id,int columns_count,ImGuiTabl
 {
     return ImGui::BeginTableEx(name,id,columns_count,flags,outer_size,inner_width);
 }
-CIMGUI_API bool SigBeginTableEx(const char* name,ImGuiID id,int columns_count,ImGuiTableFlags flags,const ImVec2 outer_size,float inner_width)
+CIMGUI_API bool igBeginTableEx_Strv(const char* name,ImGuiID id,int columns_count,ImGuiTableFlags flags,const ImVec2 outer_size,float inner_width)
 {
     return ImGui::BeginTableEx(name,id,columns_count,flags,outer_size,inner_width);
 }
@@ -4655,7 +4655,7 @@ CIMGUI_API bool igTabItemEx(ImGuiTabBar* tab_bar,ImStr label,bool* p_open,ImGuiT
 {
     return ImGui::TabItemEx(tab_bar,label,p_open,flags);
 }
-CIMGUI_API bool SigTabItemEx(ImGuiTabBar* tab_bar,const char* label,bool* p_open,ImGuiTabItemFlags flags)
+CIMGUI_API bool igTabItemEx_Strv(ImGuiTabBar* tab_bar,const char* label,bool* p_open,ImGuiTabItemFlags flags)
 {
     return ImGui::TabItemEx(tab_bar,label,p_open,flags);
 }
@@ -4663,7 +4663,7 @@ CIMGUI_API void igTabItemCalcSize(ImVec2 *pOut,ImStr label,bool has_close_button
 {
     *pOut = ImGui::TabItemCalcSize(label,has_close_button);
 }
-CIMGUI_API void SigTabItemCalcSize(ImVec2 *pOut,const char* label,bool has_close_button)
+CIMGUI_API void igTabItemCalcSize_Strv(ImVec2 *pOut,const char* label,bool has_close_button)
 {
     *pOut = ImGui::TabItemCalcSize(label,has_close_button);
 }
@@ -4675,7 +4675,7 @@ CIMGUI_API void igTabItemLabelAndCloseButton(ImDrawList* draw_list,const ImRect 
 {
     return ImGui::TabItemLabelAndCloseButton(draw_list,bb,flags,frame_padding,label,tab_id,close_button_id,is_contents_visible,out_just_closed,out_text_clipped);
 }
-CIMGUI_API void SigTabItemLabelAndCloseButton(ImDrawList* draw_list,const ImRect bb,ImGuiTabItemFlags flags,ImVec2 frame_padding,const char* label,ImGuiID tab_id,ImGuiID close_button_id,bool is_contents_visible,bool* out_just_closed,bool* out_text_clipped)
+CIMGUI_API void igTabItemLabelAndCloseButton_Strv(ImDrawList* draw_list,const ImRect bb,ImGuiTabItemFlags flags,ImVec2 frame_padding,const char* label,ImGuiID tab_id,ImGuiID close_button_id,bool is_contents_visible,bool* out_just_closed,bool* out_text_clipped)
 {
     return ImGui::TabItemLabelAndCloseButton(draw_list,bb,flags,frame_padding,label,tab_id,close_button_id,is_contents_visible,out_just_closed,out_text_clipped);
 }
@@ -4683,7 +4683,7 @@ CIMGUI_API void igRenderTextSTR(ImVec2 pos,ImStr text,bool hide_text_after_hash)
 {
     return ImGui::RenderText(pos,text,hide_text_after_hash);
 }
-CIMGUI_API void SigRenderTextSTR(ImVec2 pos,const char* text,bool hide_text_after_hash)
+CIMGUI_API void igRenderTextSTR_Strv(ImVec2 pos,const char* text,bool hide_text_after_hash)
 {
     return ImGui::RenderText(pos,text,hide_text_after_hash);
 }
@@ -4695,7 +4695,7 @@ CIMGUI_API void igRenderTextWrappedSTR(ImVec2 pos,ImStr text,float wrap_width)
 {
     return ImGui::RenderTextWrapped(pos,text,wrap_width);
 }
-CIMGUI_API void SigRenderTextWrappedSTR(ImVec2 pos,const char* text,float wrap_width)
+CIMGUI_API void igRenderTextWrappedSTR_Strv(ImVec2 pos,const char* text,float wrap_width)
 {
     return ImGui::RenderTextWrapped(pos,text,wrap_width);
 }
@@ -4707,7 +4707,7 @@ CIMGUI_API void igRenderTextClippedSTR(const ImVec2 pos_min,const ImVec2 pos_max
 {
     return ImGui::RenderTextClipped(pos_min,pos_max,text,text_size_if_known,align,clip_rect);
 }
-CIMGUI_API void SigRenderTextClippedSTR(const ImVec2 pos_min,const ImVec2 pos_max,const char* text,const ImVec2* text_size_if_known,const ImVec2 align,const ImRect* clip_rect)
+CIMGUI_API void igRenderTextClippedSTR_Strv(const ImVec2 pos_min,const ImVec2 pos_max,const char* text,const ImVec2* text_size_if_known,const ImVec2 align,const ImRect* clip_rect)
 {
     return ImGui::RenderTextClipped(pos_min,pos_max,text,text_size_if_known,align,clip_rect);
 }
@@ -4719,7 +4719,7 @@ CIMGUI_API void igRenderTextClippedExSTR(ImDrawList* draw_list,const ImVec2 pos_
 {
     return ImGui::RenderTextClippedEx(draw_list,pos_min,pos_max,text,text_size_if_known,align,clip_rect);
 }
-CIMGUI_API void SigRenderTextClippedExSTR(ImDrawList* draw_list,const ImVec2 pos_min,const ImVec2 pos_max,const char* text,const ImVec2* text_size_if_known,const ImVec2 align,const ImRect* clip_rect)
+CIMGUI_API void igRenderTextClippedExSTR_Strv(ImDrawList* draw_list,const ImVec2 pos_min,const ImVec2 pos_max,const char* text,const ImVec2* text_size_if_known,const ImVec2 align,const ImRect* clip_rect)
 {
     return ImGui::RenderTextClippedEx(draw_list,pos_min,pos_max,text,text_size_if_known,align,clip_rect);
 }
@@ -4731,7 +4731,7 @@ CIMGUI_API void igRenderTextEllipsis(ImDrawList* draw_list,const ImVec2 pos_min,
 {
     return ImGui::RenderTextEllipsis(draw_list,pos_min,pos_max,clip_max_x,ellipsis_max_x,text,text_size_if_known);
 }
-CIMGUI_API void SigRenderTextEllipsis(ImDrawList* draw_list,const ImVec2 pos_min,const ImVec2 pos_max,float clip_max_x,float ellipsis_max_x,const char* text,const ImVec2* text_size_if_known)
+CIMGUI_API void igRenderTextEllipsis_Strv(ImDrawList* draw_list,const ImVec2 pos_min,const ImVec2 pos_max,float clip_max_x,float ellipsis_max_x,const char* text,const ImVec2* text_size_if_known)
 {
     return ImGui::RenderTextEllipsis(draw_list,pos_min,pos_max,clip_max_x,ellipsis_max_x,text,text_size_if_known);
 }
@@ -4755,7 +4755,7 @@ CIMGUI_API const char* igFindRenderedTextEndSTR(ImStr text)
 {
     return ImGui::FindRenderedTextEnd(text);
 }
-CIMGUI_API const char* SigFindRenderedTextEndSTR(const char* text)
+CIMGUI_API const char* igFindRenderedTextEndSTR_Strv(const char* text)
 {
     return ImGui::FindRenderedTextEnd(text);
 }
@@ -4767,7 +4767,7 @@ CIMGUI_API void igLogRenderedTextSTR(const ImVec2* ref_pos,ImStr text)
 {
     return ImGui::LogRenderedText(ref_pos,text);
 }
-CIMGUI_API void SigLogRenderedTextSTR(const ImVec2* ref_pos,const char* text)
+CIMGUI_API void igLogRenderedTextSTR_Strv(const ImVec2* ref_pos,const char* text)
 {
     return ImGui::LogRenderedText(ref_pos,text);
 }
@@ -4807,7 +4807,7 @@ CIMGUI_API void igTextExSTR(ImStr text,ImGuiTextFlags flags)
 {
     return ImGui::TextEx(text,flags);
 }
-CIMGUI_API void SigTextExSTR(const char* text,ImGuiTextFlags flags)
+CIMGUI_API void igTextExSTR_Strv(const char* text,ImGuiTextFlags flags)
 {
     return ImGui::TextEx(text,flags);
 }
@@ -4819,7 +4819,7 @@ CIMGUI_API bool igButtonEx(ImStr label,const ImVec2 size_arg,ImGuiButtonFlags fl
 {
     return ImGui::ButtonEx(label,size_arg,flags);
 }
-CIMGUI_API bool SigButtonEx(const char* label,const ImVec2 size_arg,ImGuiButtonFlags flags)
+CIMGUI_API bool igButtonEx_Strv(const char* label,const ImVec2 size_arg,ImGuiButtonFlags flags)
 {
     return ImGui::ButtonEx(label,size_arg,flags);
 }
@@ -4835,7 +4835,7 @@ CIMGUI_API bool igArrowButtonEx(ImStr str_id,ImGuiDir dir,ImVec2 size_arg,ImGuiB
 {
     return ImGui::ArrowButtonEx(str_id,dir,size_arg,flags);
 }
-CIMGUI_API bool SigArrowButtonEx(const char* str_id,ImGuiDir dir,ImVec2 size_arg,ImGuiButtonFlags flags)
+CIMGUI_API bool igArrowButtonEx_Strv(const char* str_id,ImGuiDir dir,ImVec2 size_arg,ImGuiButtonFlags flags)
 {
     return ImGui::ArrowButtonEx(str_id,dir,size_arg,flags);
 }
@@ -4871,7 +4871,7 @@ CIMGUI_API bool igCheckboxFlagsS64Ptr(ImStr label,ImS64* flags,ImS64 flags_value
 {
     return ImGui::CheckboxFlags(label,flags,flags_value);
 }
-CIMGUI_API bool SigCheckboxFlagsS64Ptr(const char* label,ImS64* flags,ImS64 flags_value)
+CIMGUI_API bool igCheckboxFlagsS64Ptr_Strv(const char* label,ImS64* flags,ImS64 flags_value)
 {
     return ImGui::CheckboxFlags(label,flags,flags_value);
 }
@@ -4879,7 +4879,7 @@ CIMGUI_API bool igCheckboxFlagsU64Ptr(ImStr label,ImU64* flags,ImU64 flags_value
 {
     return ImGui::CheckboxFlags(label,flags,flags_value);
 }
-CIMGUI_API bool SigCheckboxFlagsU64Ptr(const char* label,ImU64* flags,ImU64 flags_value)
+CIMGUI_API bool igCheckboxFlagsU64Ptr_Strv(const char* label,ImU64* flags,ImU64 flags_value)
 {
     return ImGui::CheckboxFlags(label,flags,flags_value);
 }
@@ -4903,7 +4903,7 @@ CIMGUI_API bool igTreeNodeBehavior(ImGuiID id,ImGuiTreeNodeFlags flags,ImStr lab
 {
     return ImGui::TreeNodeBehavior(id,flags,label);
 }
-CIMGUI_API bool SigTreeNodeBehavior(ImGuiID id,ImGuiTreeNodeFlags flags,const char* label)
+CIMGUI_API bool igTreeNodeBehavior_Strv(ImGuiID id,ImGuiTreeNodeFlags flags,const char* label)
 {
     return ImGui::TreeNodeBehavior(id,flags,label);
 }
@@ -4943,7 +4943,7 @@ CIMGUI_API bool igInputTextEx(ImStr label,ImStr hint,char* buf,int buf_size,cons
 {
     return ImGui::InputTextEx(label,hint,buf,buf_size,size_arg,flags,callback,user_data);
 }
-CIMGUI_API bool SigInputTextEx(const char* label,const char* hint,char* buf,int buf_size,const ImVec2 size_arg,ImGuiInputTextFlags flags,ImGuiInputTextCallback callback,void* user_data)
+CIMGUI_API bool igInputTextEx_Strv(const char* label,const char* hint,char* buf,int buf_size,const ImVec2 size_arg,ImGuiInputTextFlags flags,ImGuiInputTextCallback callback,void* user_data)
 {
     return ImGui::InputTextEx(label,hint,buf,buf_size,size_arg,flags,callback,user_data);
 }
@@ -4951,7 +4951,7 @@ CIMGUI_API bool igTempInputText(const ImRect bb,ImGuiID id,ImStr label,char* buf
 {
     return ImGui::TempInputText(bb,id,label,buf,buf_size,flags);
 }
-CIMGUI_API bool SigTempInputText(const ImRect bb,ImGuiID id,const char* label,char* buf,int buf_size,ImGuiInputTextFlags flags)
+CIMGUI_API bool igTempInputText_Strv(const ImRect bb,ImGuiID id,const char* label,char* buf,int buf_size,ImGuiInputTextFlags flags)
 {
     return ImGui::TempInputText(bb,id,label,buf,buf_size,flags);
 }
@@ -4959,7 +4959,7 @@ CIMGUI_API bool igTempInputScalar(const ImRect bb,ImGuiID id,ImStr label,ImGuiDa
 {
     return ImGui::TempInputScalar(bb,id,label,data_type,p_data,format,p_clamp_min,p_clamp_max);
 }
-CIMGUI_API bool SigTempInputScalar(const ImRect bb,ImGuiID id,const char* label,ImGuiDataType data_type,void* p_data,const char* format,const void* p_clamp_min,const void* p_clamp_max)
+CIMGUI_API bool igTempInputScalar_Strv(const ImRect bb,ImGuiID id,const char* label,ImGuiDataType data_type,void* p_data,const char* format,const void* p_clamp_min,const void* p_clamp_max)
 {
     return ImGui::TempInputScalar(bb,id,label,data_type,p_data,format,p_clamp_min,p_clamp_max);
 }
@@ -4975,7 +4975,7 @@ CIMGUI_API void igColorTooltip(ImStr text,const float* col,ImGuiColorEditFlags f
 {
     return ImGui::ColorTooltip(text,col,flags);
 }
-CIMGUI_API void SigColorTooltip(const char* text,const float* col,ImGuiColorEditFlags flags)
+CIMGUI_API void igColorTooltip_Strv(const char* text,const float* col,ImGuiColorEditFlags flags)
 {
     return ImGui::ColorTooltip(text,col,flags);
 }
@@ -4991,7 +4991,7 @@ CIMGUI_API int igPlotEx(ImGuiPlotType plot_type,ImStr label,float(*values_getter
 {
     return ImGui::PlotEx(plot_type,label,values_getter,data,values_count,values_offset,overlay_text,scale_min,scale_max,frame_size);
 }
-CIMGUI_API int SigPlotEx(ImGuiPlotType plot_type,const char* label,float(*values_getter)(void* data,int idx),void* data,int values_count,int values_offset,const char* overlay_text,float scale_min,float scale_max,ImVec2 frame_size)
+CIMGUI_API int igPlotEx_Strv(ImGuiPlotType plot_type,const char* label,float(*values_getter)(void* data,int idx),void* data,int values_count,int values_offset,const char* overlay_text,float scale_min,float scale_max,ImVec2 frame_size)
 {
     return ImGui::PlotEx(plot_type,label,values_getter,data,values_count,values_offset,overlay_text,scale_min,scale_max,frame_size);
 }

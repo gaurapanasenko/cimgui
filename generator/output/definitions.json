@@ -2238,7 +2238,7 @@
       "funcname": "AddText",
       "isIMSTR_S": 1,
       "location": "imgui:2398",
-      "ov_cimguiname": "SImDrawList_AddTextVec2U32STR",
+      "ov_cimguiname": "ImDrawList_AddTextVec2U32STR_Strv",
       "ret": "void",
       "signature": "(const ImVec2,ImU32,const char*)",
       "stname": "ImDrawList"
@@ -2289,7 +2289,7 @@
       "funcname": "AddText",
       "isIMSTR_S": 1,
       "location": "imgui:2400",
-      "ov_cimguiname": "SImDrawList_AddTextFontPtrFloatVec2STR",
+      "ov_cimguiname": "ImDrawList_AddTextFontPtrFloatVec2STR_Strv",
       "ret": "void",
       "signature": "(const ImFont*,float,const ImVec2,ImU32,const char*,float,const ImVec4*)",
       "stname": "ImDrawList"
@@ -3672,7 +3672,7 @@
       "funcname": "AddFontFromFileTTF",
       "isIMSTR_S": 1,
       "location": "imgui:2594",
-      "ov_cimguiname": "SImFontAtlas_AddFontFromFileTTF",
+      "ov_cimguiname": "ImFontAtlas_AddFontFromFileTTF_Strv",
       "ret": "ImFont*",
       "signature": "(const char*,float,const ImFontConfig*,const ImWchar*)",
       "stname": "ImFontAtlas"
@@ -3751,7 +3751,7 @@
       "funcname": "AddFontFromMemoryCompressedBase85TTF",
       "isIMSTR_S": 1,
       "location": "imgui:2597",
-      "ov_cimguiname": "SImFontAtlas_AddFontFromMemoryCompressedBase85TTF",
+      "ov_cimguiname": "ImFontAtlas_AddFontFromMemoryCompressedBase85TTF_Strv",
       "ret": "ImFont*",
       "signature": "(const char*,float,const ImFontConfig*,const ImWchar*)",
       "stname": "ImFontAtlas"
@@ -4535,7 +4535,7 @@
       "funcname": "AddText",
       "isIMSTR_S": 1,
       "location": "imgui:2543",
-      "ov_cimguiname": "SImFontGlyphRangesBuilder_AddTextSTR",
+      "ov_cimguiname": "ImFontGlyphRangesBuilder_AddTextSTR_Strv",
       "ret": "void",
       "signature": "(const char*)",
       "stname": "ImFontGlyphRangesBuilder"
@@ -4932,7 +4932,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:2722",
       "nonUDT": 1,
-      "ov_cimguiname": "SImFont_CalcTextSizeASTR",
+      "ov_cimguiname": "ImFont_CalcTextSizeASTR_Strv",
       "ret": "void",
       "signature": "(float,float,float,const char*,const char**)const",
       "stname": "ImFont"
@@ -5032,7 +5032,7 @@
       "funcname": "CalcWordWrapPositionA",
       "isIMSTR_S": 1,
       "location": "imgui:2724",
-      "ov_cimguiname": "SImFont_CalcWordWrapPositionASTR",
+      "ov_cimguiname": "ImFont_CalcWordWrapPositionASTR_Strv",
       "ret": "const char*",
       "signature": "(float,const char*,float)const",
       "stname": "ImFont"
@@ -5450,7 +5450,7 @@
       "funcname": "RenderText",
       "isIMSTR_S": 1,
       "location": "imgui:2727",
-      "ov_cimguiname": "SImFont_RenderTextSTR",
+      "ov_cimguiname": "ImFont_RenderTextSTR_Strv",
       "ret": "void",
       "signature": "(ImDrawList*,float,ImVec2,ImU32,const ImVec4,const char*,float,bool)const",
       "stname": "ImFont"
@@ -5906,7 +5906,7 @@
       "funcname": "InsertChars",
       "isIMSTR_S": 1,
       "location": "imgui:1916",
-      "ov_cimguiname": "SImGuiInputTextCallbackData_InsertCharsSTR",
+      "ov_cimguiname": "ImGuiInputTextCallbackData_InsertCharsSTR_Strv",
       "ret": "void",
       "signature": "(int,const char*)",
       "stname": "ImGuiInputTextCallbackData"
@@ -6902,7 +6902,7 @@
       "funcname": "IsDataType",
       "isIMSTR_S": 1,
       "location": "imgui:1950",
-      "ov_cimguiname": "SImGuiPayload_IsDataType",
+      "ov_cimguiname": "ImGuiPayload_IsDataType_Strv",
       "ret": "bool",
       "signature": "(const char*)const",
       "stname": "ImGuiPayload"
@@ -8279,7 +8279,7 @@
       "funcname": "append",
       "isIMSTR_S": 1,
       "location": "imgui:2073",
-      "ov_cimguiname": "SImGuiTextBuffer_appendSTR",
+      "ov_cimguiname": "ImGuiTextBuffer_appendSTR_Strv",
       "ret": "void",
       "signature": "(const char*)",
       "stname": "ImGuiTextBuffer"
@@ -8614,7 +8614,7 @@
       "funcname": "Draw",
       "isIMSTR_S": 1,
       "location": "imgui:2045",
-      "ov_cimguiname": "SImGuiTextFilter_Draw",
+      "ov_cimguiname": "ImGuiTextFilter_Draw_Strv",
       "ret": "bool",
       "signature": "(const char*,float)",
       "stname": "ImGuiTextFilter"
@@ -8660,7 +8660,7 @@
       "funcname": "ImGuiTextFilter",
       "isIMSTR_S": 1,
       "location": "imgui:2044",
-      "ov_cimguiname": "SImGuiTextFilter_ImGuiTextFilter",
+      "ov_cimguiname": "ImGuiTextFilter_ImGuiTextFilter_Strv",
       "signature": "(const char*)",
       "stname": "ImGuiTextFilter"
     }
@@ -8758,7 +8758,7 @@
       "funcname": "PassFilter",
       "isIMSTR_S": 1,
       "location": "imgui:2046",
-      "ov_cimguiname": "SImGuiTextFilter_PassFilterSTR",
+      "ov_cimguiname": "ImGuiTextFilter_PassFilterSTR_Strv",
       "ret": "bool",
       "signature": "(const char*)const",
       "stname": "ImGuiTextFilter"
@@ -9124,7 +9124,7 @@
       "funcname": "GetIDNoKeepAlive",
       "isIMSTR_S": 1,
       "location": "imgui_internal:1809",
-      "ov_cimguiname": "SImGuiWindow_GetIDNoKeepAliveSTR",
+      "ov_cimguiname": "ImGuiWindow_GetIDNoKeepAliveSTR_Strv",
       "ret": "ImGuiID",
       "signature": "(const char*)",
       "stname": "ImGuiWindow"
@@ -9174,7 +9174,7 @@
       "funcname": "ImGuiWindow",
       "isIMSTR_S": 1,
       "location": "imgui_internal:1800",
-      "ov_cimguiname": "SImGuiWindow_ImGuiWindow",
+      "ov_cimguiname": "ImGuiWindow_ImGuiWindow_Strv",
       "signature": "(ImGuiContext*,const char*)",
       "stname": "ImGuiWindow"
     }
@@ -12054,7 +12054,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:774",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigAcceptDragDropPayload",
+      "ov_cimguiname": "igAcceptDragDropPayload_Strv",
       "ret": "const ImGuiPayload*",
       "signature": "(const char*,ImGuiDragDropFlags)",
       "stname": ""
@@ -12170,7 +12170,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:484",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigArrowButton",
+      "ov_cimguiname": "igArrowButton_Strv",
       "ret": "bool",
       "signature": "(const char*,ImGuiDir)",
       "stname": ""
@@ -12241,7 +12241,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2432",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigArrowButtonEx",
+      "ov_cimguiname": "igArrowButtonEx_Strv",
       "ret": "bool",
       "signature": "(const char*,ImGuiDir,ImVec2,ImGuiButtonFlags)",
       "stname": ""
@@ -12306,7 +12306,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:317",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigBegin",
+      "ov_cimguiname": "igBegin_Strv",
       "ret": "bool",
       "signature": "(const char*,bool*,ImGuiWindowFlags)",
       "stname": ""
@@ -12417,7 +12417,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:328",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigBeginChildSTR",
+      "ov_cimguiname": "igBeginChildSTR_Strv",
       "ret": "bool",
       "signature": "(const char*,const ImVec2,bool,ImGuiWindowFlags)",
       "stname": ""
@@ -12492,7 +12492,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2268",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigBeginChildEx",
+      "ov_cimguiname": "igBeginChildEx_Strv",
       "ret": "bool",
       "signature": "(const char*,ImGuiID,const ImVec2,bool,ImGuiWindowFlags)",
       "stname": ""
@@ -12587,7 +12587,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2319",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigBeginColumns",
+      "ov_cimguiname": "igBeginColumns_Strv",
       "ret": "void",
       "signature": "(const char*,int,ImGuiOldColumnFlags)",
       "stname": ""
@@ -12650,7 +12650,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:498",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigBeginCombo",
+      "ov_cimguiname": "igBeginCombo_Strv",
       "ret": "bool",
       "signature": "(const char*,const char*,ImGuiComboFlags)",
       "stname": ""
@@ -12806,7 +12806,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:633",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigBeginMenu",
+      "ov_cimguiname": "igBeginMenu_Strv",
       "ret": "bool",
       "signature": "(const char*,bool)",
       "stname": ""
@@ -12878,7 +12878,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:656",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigBeginPopup",
+      "ov_cimguiname": "igBeginPopup_Strv",
       "ret": "bool",
       "signature": "(const char*,ImGuiWindowFlags)",
       "stname": ""
@@ -12935,7 +12935,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:673",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigBeginPopupContextItem",
+      "ov_cimguiname": "igBeginPopupContextItem_Strv",
       "ret": "bool",
       "signature": "(const char*,ImGuiPopupFlags)",
       "stname": ""
@@ -12992,7 +12992,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:675",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigBeginPopupContextVoid",
+      "ov_cimguiname": "igBeginPopupContextVoid_Strv",
       "ret": "bool",
       "signature": "(const char*,ImGuiPopupFlags)",
       "stname": ""
@@ -13049,7 +13049,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:674",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigBeginPopupContextWindow",
+      "ov_cimguiname": "igBeginPopupContextWindow_Strv",
       "ret": "bool",
       "signature": "(const char*,ImGuiPopupFlags)",
       "stname": ""
@@ -13140,7 +13140,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:657",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigBeginPopupModal",
+      "ov_cimguiname": "igBeginPopupModal_Strv",
       "ret": "bool",
       "signature": "(const char*,bool*,ImGuiWindowFlags)",
       "stname": ""
@@ -13195,7 +13195,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:752",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigBeginTabBar",
+      "ov_cimguiname": "igBeginTabBar_Strv",
       "ret": "bool",
       "signature": "(const char*,ImGuiTabBarFlags)",
       "stname": ""
@@ -13290,7 +13290,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:754",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigBeginTabItem",
+      "ov_cimguiname": "igBeginTabItem_Strv",
       "ret": "bool",
       "signature": "(const char*,bool*,ImGuiTabItemFlags)",
       "stname": ""
@@ -13373,7 +13373,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:707",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigBeginTable",
+      "ov_cimguiname": "igBeginTable_Strv",
       "ret": "bool",
       "signature": "(const char*,int,ImGuiTableFlags,const ImVec2,float)",
       "stname": ""
@@ -13464,7 +13464,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2340",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigBeginTableEx",
+      "ov_cimguiname": "igBeginTableEx_Strv",
       "ret": "bool",
       "signature": "(const char*,ImGuiID,int,ImGuiTableFlags,const ImVec2,float)",
       "stname": ""
@@ -13698,7 +13698,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:481",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigButton",
+      "ov_cimguiname": "igButton_Strv",
       "ret": "bool",
       "signature": "(const char*,const ImVec2)",
       "stname": ""
@@ -13803,7 +13803,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2429",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigButtonEx",
+      "ov_cimguiname": "igButtonEx_Strv",
       "ret": "bool",
       "signature": "(const char*,const ImVec2,ImGuiButtonFlags)",
       "stname": ""
@@ -14004,7 +14004,7 @@
       "location": "imgui:825",
       "namespace": "ImGui",
       "nonUDT": 1,
-      "ov_cimguiname": "SigCalcTextSizeSTR",
+      "ov_cimguiname": "igCalcTextSizeSTR_Strv",
       "ret": "void",
       "signature": "(const char*,bool,float)",
       "stname": ""
@@ -14216,7 +14216,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:487",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigCheckbox",
+      "ov_cimguiname": "igCheckbox_Strv",
       "ret": "bool",
       "signature": "(const char*,bool*)",
       "stname": ""
@@ -14359,7 +14359,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:488",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigCheckboxFlagsIntPtr",
+      "ov_cimguiname": "igCheckboxFlagsIntPtr_Strv",
       "ret": "bool",
       "signature": "(const char*,int*,int)",
       "stname": ""
@@ -14388,7 +14388,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:489",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigCheckboxFlagsUintPtr",
+      "ov_cimguiname": "igCheckboxFlagsUintPtr_Strv",
       "ret": "bool",
       "signature": "(const char*,unsigned int*,unsigned int)",
       "stname": ""
@@ -14417,7 +14417,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2440",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigCheckboxFlagsS64Ptr",
+      "ov_cimguiname": "igCheckboxFlagsS64Ptr_Strv",
       "ret": "bool",
       "signature": "(const char*,ImS64*,ImS64)",
       "stname": ""
@@ -14446,7 +14446,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2441",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigCheckboxFlagsU64Ptr",
+      "ov_cimguiname": "igCheckboxFlagsU64Ptr_Strv",
       "ret": "bool",
       "signature": "(const char*,ImU64*,ImU64)",
       "stname": ""
@@ -14703,7 +14703,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:594",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigCollapsingHeaderTreeNodeFlags",
+      "ov_cimguiname": "igCollapsingHeaderTreeNodeFlags_Strv",
       "ret": "bool",
       "signature": "(const char*,ImGuiTreeNodeFlags)",
       "stname": ""
@@ -14734,7 +14734,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:595",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigCollapsingHeaderBoolPtr",
+      "ov_cimguiname": "igCollapsingHeaderBoolPtr_Strv",
       "ret": "bool",
       "signature": "(const char*,bool*,ImGuiTreeNodeFlags)",
       "stname": ""
@@ -14807,7 +14807,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:575",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigColorButton",
+      "ov_cimguiname": "igColorButton_Strv",
       "ret": "bool",
       "signature": "(const char*,const ImVec4,ImGuiColorEditFlags,ImVec2)",
       "stname": ""
@@ -15009,7 +15009,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:571",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigColorEdit3",
+      "ov_cimguiname": "igColorEdit3_Strv",
       "ret": "bool",
       "signature": "(const char*,float[3],ImGuiColorEditFlags)",
       "stname": ""
@@ -15072,7 +15072,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:572",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigColorEdit4",
+      "ov_cimguiname": "igColorEdit4_Strv",
       "ret": "bool",
       "signature": "(const char*,float[4],ImGuiColorEditFlags)",
       "stname": ""
@@ -15161,7 +15161,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:573",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigColorPicker3",
+      "ov_cimguiname": "igColorPicker3_Strv",
       "ret": "bool",
       "signature": "(const char*,float[3],ImGuiColorEditFlags)",
       "stname": ""
@@ -15234,7 +15234,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:574",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigColorPicker4",
+      "ov_cimguiname": "igColorPicker4_Strv",
       "ret": "bool",
       "signature": "(const char*,float[4],ImGuiColorEditFlags,const float*)",
       "stname": ""
@@ -15319,7 +15319,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2478",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigColorTooltip",
+      "ov_cimguiname": "igColorTooltip_Strv",
       "ret": "void",
       "signature": "(const char*,const float*,ImGuiColorEditFlags)",
       "stname": ""
@@ -15386,7 +15386,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:742",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigColumns",
+      "ov_cimguiname": "igColumns_Strv",
       "ret": "void",
       "signature": "(int,const char*,bool)",
       "stname": ""
@@ -15543,7 +15543,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:500",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigComboStr_arr",
+      "ov_cimguiname": "igComboStr_arr_Strv",
       "ret": "bool",
       "signature": "(const char*,int*,const char* const[],int,int)",
       "stname": ""
@@ -15578,7 +15578,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:501",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigComboStr",
+      "ov_cimguiname": "igComboStr_Strv",
       "ret": "bool",
       "signature": "(const char*,int*,const char*,int)",
       "stname": ""
@@ -15621,7 +15621,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:502",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigComboFnBoolPtr",
+      "ov_cimguiname": "igComboFnBoolPtr_Strv",
       "ret": "bool",
       "signature": "(const char*,int*,bool(*)(void*,int,const char**),void*,int,int)",
       "stname": ""
@@ -15688,7 +15688,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2216",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigCreateNewWindowSettings",
+      "ov_cimguiname": "igCreateNewWindowSettings_Strv",
       "ret": "ImGuiWindowSettings*",
       "signature": "(const char*)",
       "stname": ""
@@ -15979,7 +15979,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:878",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigDebugCheckVersionAndDataLayout",
+      "ov_cimguiname": "igDebugCheckVersionAndDataLayout_Strv",
       "ret": "bool",
       "signature": "(const char*,size_t,size_t,size_t,size_t,size_t,size_t)",
       "stname": ""
@@ -16457,7 +16457,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:515",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigDragFloat",
+      "ov_cimguiname": "igDragFloat_Strv",
       "ret": "bool",
       "signature": "(const char*,float*,float,float,float,const char*,ImGuiSliderFlags)",
       "stname": ""
@@ -16560,7 +16560,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:516",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigDragFloat2",
+      "ov_cimguiname": "igDragFloat2_Strv",
       "ret": "bool",
       "signature": "(const char*,float[2],float,float,float,const char*,ImGuiSliderFlags)",
       "stname": ""
@@ -16663,7 +16663,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:517",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigDragFloat3",
+      "ov_cimguiname": "igDragFloat3_Strv",
       "ret": "bool",
       "signature": "(const char*,float[3],float,float,float,const char*,ImGuiSliderFlags)",
       "stname": ""
@@ -16766,7 +16766,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:518",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigDragFloat4",
+      "ov_cimguiname": "igDragFloat4_Strv",
       "ret": "bool",
       "signature": "(const char*,float[4],float,float,float,const char*,ImGuiSliderFlags)",
       "stname": ""
@@ -16887,7 +16887,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:519",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigDragFloatRange2",
+      "ov_cimguiname": "igDragFloatRange2_Strv",
       "ret": "bool",
       "signature": "(const char*,float*,float*,float,float,float,const char*,const char*,ImGuiSliderFlags)",
       "stname": ""
@@ -16990,7 +16990,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:520",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigDragInt",
+      "ov_cimguiname": "igDragInt_Strv",
       "ret": "bool",
       "signature": "(const char*,int*,float,int,int,const char*,ImGuiSliderFlags)",
       "stname": ""
@@ -17093,7 +17093,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:521",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigDragInt2",
+      "ov_cimguiname": "igDragInt2_Strv",
       "ret": "bool",
       "signature": "(const char*,int[2],float,int,int,const char*,ImGuiSliderFlags)",
       "stname": ""
@@ -17196,7 +17196,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:522",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigDragInt3",
+      "ov_cimguiname": "igDragInt3_Strv",
       "ret": "bool",
       "signature": "(const char*,int[3],float,int,int,const char*,ImGuiSliderFlags)",
       "stname": ""
@@ -17299,7 +17299,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:523",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigDragInt4",
+      "ov_cimguiname": "igDragInt4_Strv",
       "ret": "bool",
       "signature": "(const char*,int[4],float,int,int,const char*,ImGuiSliderFlags)",
       "stname": ""
@@ -17420,7 +17420,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:524",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigDragIntRange2",
+      "ov_cimguiname": "igDragIntRange2_Strv",
       "ret": "bool",
       "signature": "(const char*,int*,int*,float,int,int,const char*,const char*,ImGuiSliderFlags)",
       "stname": ""
@@ -17529,7 +17529,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:525",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigDragScalar",
+      "ov_cimguiname": "igDragScalar_Strv",
       "ret": "bool",
       "signature": "(const char*,ImGuiDataType,void*,float,const void*,const void*,const char*,ImGuiSliderFlags)",
       "stname": ""
@@ -17646,7 +17646,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:526",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigDragScalarN",
+      "ov_cimguiname": "igDragScalarN_Strv",
       "ret": "bool",
       "signature": "(const char*,ImGuiDataType,void*,int,float,const void*,const void*,const char*,ImGuiSliderFlags)",
       "stname": ""
@@ -18128,7 +18128,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2218",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigFindOrCreateWindowSettings",
+      "ov_cimguiname": "igFindOrCreateWindowSettings_Strv",
       "ret": "ImGuiWindowSettings*",
       "signature": "(const char*)",
       "stname": ""
@@ -18195,7 +18195,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2406",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigFindRenderedTextEndSTR",
+      "ov_cimguiname": "igFindRenderedTextEndSTR_Strv",
       "ret": "const char*",
       "signature": "(const char*)",
       "stname": ""
@@ -18238,7 +18238,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2219",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigFindSettingsHandler",
+      "ov_cimguiname": "igFindSettingsHandler_Strv",
       "ret": "ImGuiSettingsHandler*",
       "signature": "(const char*)",
       "stname": ""
@@ -18303,7 +18303,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2173",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigFindWindowByName",
+      "ov_cimguiname": "igFindWindowByName_Strv",
       "ret": "ImGuiWindow*",
       "signature": "(const char*)",
       "stname": ""
@@ -18786,7 +18786,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2324",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigGetColumnsID",
+      "ov_cimguiname": "igGetColumnsID_Strv",
       "ret": "ImGuiID",
       "signature": "(const char*,int)",
       "stname": ""
@@ -19379,7 +19379,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:457",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigGetIDSTR",
+      "ov_cimguiname": "igGetIDSTR_Strv",
       "ret": "ImGuiID",
       "signature": "(const char*)",
       "stname": ""
@@ -20878,7 +20878,7 @@
       "funcname": "ImFileLoadToMemory",
       "isIMSTR_S": 1,
       "location": "imgui_internal:360",
-      "ov_cimguiname": "SigImFileLoadToMemory",
+      "ov_cimguiname": "igImFileLoadToMemory_Strv",
       "ret": "void*",
       "signature": "(const char*,const char*,size_t*,int)",
       "stname": ""
@@ -20927,7 +20927,7 @@
       "funcname": "ImFileOpen",
       "isIMSTR_S": 1,
       "location": "imgui_internal:352",
-      "ov_cimguiname": "SigImFileOpen",
+      "ov_cimguiname": "igImFileOpen_Strv",
       "ret": "ImFileHandle",
       "signature": "(const char*,const char*)",
       "stname": ""
@@ -21483,7 +21483,7 @@
       "funcname": "ImHashStr",
       "isIMSTR_S": 1,
       "location": "imgui_internal:266",
-      "ov_cimguiname": "SigImHashStrSTR",
+      "ov_cimguiname": "igImHashStrSTR_Strv",
       "ret": "ImGuiID",
       "signature": "(const char*,ImU32)",
       "stname": ""
@@ -22621,7 +22621,7 @@
       "funcname": "ImStrstr",
       "isIMSTR_S": 1,
       "location": "imgui_internal:299",
-      "ov_cimguiname": "SigImStrstr",
+      "ov_cimguiname": "igImStrstr_Strv",
       "ret": "const char*",
       "signature": "(const char*,const char*)",
       "stname": ""
@@ -23254,7 +23254,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:564",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigInputDouble",
+      "ov_cimguiname": "igInputDouble_Strv",
       "ret": "bool",
       "signature": "(const char*,double*,double,double,const char*,ImGuiInputTextFlags)",
       "stname": ""
@@ -23347,7 +23347,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:556",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigInputFloat",
+      "ov_cimguiname": "igInputFloat_Strv",
       "ret": "bool",
       "signature": "(const char*,float*,float,float,const char*,ImGuiInputTextFlags)",
       "stname": ""
@@ -23420,7 +23420,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:557",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigInputFloat2",
+      "ov_cimguiname": "igInputFloat2_Strv",
       "ret": "bool",
       "signature": "(const char*,float[2],const char*,ImGuiInputTextFlags)",
       "stname": ""
@@ -23493,7 +23493,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:558",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigInputFloat3",
+      "ov_cimguiname": "igInputFloat3_Strv",
       "ret": "bool",
       "signature": "(const char*,float[3],const char*,ImGuiInputTextFlags)",
       "stname": ""
@@ -23566,7 +23566,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:559",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigInputFloat4",
+      "ov_cimguiname": "igInputFloat4_Strv",
       "ret": "bool",
       "signature": "(const char*,float[4],const char*,ImGuiInputTextFlags)",
       "stname": ""
@@ -23649,7 +23649,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:560",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigInputInt",
+      "ov_cimguiname": "igInputInt_Strv",
       "ret": "bool",
       "signature": "(const char*,int*,int,int,ImGuiInputTextFlags)",
       "stname": ""
@@ -23712,7 +23712,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:561",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigInputInt2",
+      "ov_cimguiname": "igInputInt2_Strv",
       "ret": "bool",
       "signature": "(const char*,int[2],ImGuiInputTextFlags)",
       "stname": ""
@@ -23775,7 +23775,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:562",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigInputInt3",
+      "ov_cimguiname": "igInputInt3_Strv",
       "ret": "bool",
       "signature": "(const char*,int[3],ImGuiInputTextFlags)",
       "stname": ""
@@ -23838,7 +23838,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:563",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigInputInt4",
+      "ov_cimguiname": "igInputInt4_Strv",
       "ret": "bool",
       "signature": "(const char*,int[4],ImGuiInputTextFlags)",
       "stname": ""
@@ -23939,7 +23939,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:565",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigInputScalar",
+      "ov_cimguiname": "igInputScalar_Strv",
       "ret": "bool",
       "signature": "(const char*,ImGuiDataType,void*,const void*,const void*,const char*,ImGuiInputTextFlags)",
       "stname": ""
@@ -24048,7 +24048,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:566",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigInputScalarN",
+      "ov_cimguiname": "igInputScalarN_Strv",
       "ret": "bool",
       "signature": "(const char*,ImGuiDataType,void*,int,const void*,const void*,const char*,ImGuiInputTextFlags)",
       "stname": ""
@@ -24139,7 +24139,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:553",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigInputText",
+      "ov_cimguiname": "igInputText_Strv",
       "ret": "bool",
       "signature": "(const char*,char*,size_t,ImGuiInputTextFlags,ImGuiInputTextCallback,void*)",
       "stname": ""
@@ -24244,7 +24244,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2471",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigInputTextEx",
+      "ov_cimguiname": "igInputTextEx_Strv",
       "ret": "bool",
       "signature": "(const char*,const char*,char*,int,const ImVec2,ImGuiInputTextFlags,ImGuiInputTextCallback,void*)",
       "stname": ""
@@ -24345,7 +24345,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:554",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigInputTextMultiline",
+      "ov_cimguiname": "igInputTextMultiline_Strv",
       "ret": "bool",
       "signature": "(const char*,char*,size_t,const ImVec2,ImGuiInputTextFlags,ImGuiInputTextCallback,void*)",
       "stname": ""
@@ -24444,7 +24444,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:555",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigInputTextWithHint",
+      "ov_cimguiname": "igInputTextWithHint_Strv",
       "ret": "bool",
       "signature": "(const char*,const char*,char*,size_t,ImGuiInputTextFlags,ImGuiInputTextCallback,void*)",
       "stname": ""
@@ -24507,7 +24507,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:483",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigInvisibleButton",
+      "ov_cimguiname": "igInvisibleButton_Strv",
       "ret": "bool",
       "signature": "(const char*,const ImVec2,ImGuiButtonFlags)",
       "stname": ""
@@ -25322,7 +25322,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:680",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigIsPopupOpenSTR",
+      "ov_cimguiname": "igIsPopupOpenSTR_Strv",
       "ret": "bool",
       "signature": "(const char*,ImGuiPopupFlags)",
       "stname": ""
@@ -25719,7 +25719,7 @@
       "isvararg": "...)",
       "location": "imgui:473",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigLabelText",
+      "ov_cimguiname": "igLabelText_Strv",
       "ret": "void",
       "signature": "(const char*,const char*,...)",
       "stname": ""
@@ -25778,7 +25778,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:474",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigLabelTextV",
+      "ov_cimguiname": "igLabelTextV_Strv",
       "ret": "void",
       "signature": "(const char*,const char*,va_list)",
       "stname": ""
@@ -25901,7 +25901,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:606",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigListBoxStr_arr",
+      "ov_cimguiname": "igListBoxStr_arr_Strv",
       "ret": "bool",
       "signature": "(const char*,int*,const char* const[],int,int)",
       "stname": ""
@@ -25944,7 +25944,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:607",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigListBoxFnBoolPtr",
+      "ov_cimguiname": "igListBoxFnBoolPtr_Strv",
       "ret": "bool",
       "signature": "(const char*,int*,bool(*)(void*,int,const char**),void*,int,int)",
       "stname": ""
@@ -26046,7 +26046,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:608",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigListBoxHeaderVec2",
+      "ov_cimguiname": "igListBoxHeaderVec2_Strv",
       "ret": "bool",
       "signature": "(const char*,const ImVec2)",
       "stname": ""
@@ -26077,7 +26077,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:609",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigListBoxHeaderInt",
+      "ov_cimguiname": "igListBoxHeaderInt_Strv",
       "ret": "bool",
       "signature": "(const char*,int,int)",
       "stname": ""
@@ -26120,7 +26120,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:872",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigLoadIniSettingsFromDisk",
+      "ov_cimguiname": "igLoadIniSettingsFromDisk_Strv",
       "ret": "void",
       "signature": "(const char*)",
       "stname": ""
@@ -26163,7 +26163,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:873",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigLoadIniSettingsFromMemory",
+      "ov_cimguiname": "igLoadIniSettingsFromMemory_Strv",
       "ret": "void",
       "signature": "(const char*)",
       "stname": ""
@@ -26302,7 +26302,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2408",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigLogRenderedTextSTR",
+      "ov_cimguiname": "igLogRenderedTextSTR_Strv",
       "ret": "void",
       "signature": "(const ImVec2*,const char*)",
       "stname": ""
@@ -26435,7 +26435,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:762",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigLogToFile",
+      "ov_cimguiname": "igLogToFile_Strv",
       "ret": "void",
       "signature": "(int,const char*)",
       "stname": ""
@@ -26671,7 +26671,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:635",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigMenuItemBool",
+      "ov_cimguiname": "igMenuItemBool_Strv",
       "ret": "bool",
       "signature": "(const char*,const char*,bool,bool)",
       "stname": ""
@@ -26706,7 +26706,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:636",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigMenuItemBoolPtr",
+      "ov_cimguiname": "igMenuItemBoolPtr_Strv",
       "ret": "bool",
       "signature": "(const char*,const char*,bool*,bool)",
       "stname": ""
@@ -26932,7 +26932,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:665",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigOpenPopup",
+      "ov_cimguiname": "igOpenPopup_Strv",
       "ret": "void",
       "signature": "(const char*,ImGuiPopupFlags)",
       "stname": ""
@@ -27017,7 +27017,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:666",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigOpenPopupOnItemClick",
+      "ov_cimguiname": "igOpenPopupOnItemClick_Strv",
       "ret": "void",
       "signature": "(const char*,ImGuiPopupFlags)",
       "stname": ""
@@ -27134,7 +27134,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2483",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigPlotEx",
+      "ov_cimguiname": "igPlotEx_Strv",
       "ret": "int",
       "signature": "(ImGuiPlotType,const char*,float(*)(void*,int),void*,int,int,const char*,float,float,ImVec2)",
       "stname": ""
@@ -27315,7 +27315,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:615",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigPlotHistogramFloatPtr",
+      "ov_cimguiname": "igPlotHistogramFloatPtr_Strv",
       "ret": "void",
       "signature": "(const char*,const float*,int,int,const char*,float,float,ImVec2,int)",
       "stname": ""
@@ -27374,7 +27374,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:616",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigPlotHistogramFnFloatPtr",
+      "ov_cimguiname": "igPlotHistogramFnFloatPtr_Strv",
       "ret": "void",
       "signature": "(const char*,float(*)(void*,int),void*,int,int,const char*,float,float,ImVec2)",
       "stname": ""
@@ -27555,7 +27555,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:613",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigPlotLinesFloatPtr",
+      "ov_cimguiname": "igPlotLinesFloatPtr_Strv",
       "ret": "void",
       "signature": "(const char*,const float*,int,int,const char*,float,float,ImVec2,int)",
       "stname": ""
@@ -27614,7 +27614,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:614",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigPlotLinesFnFloatPtr",
+      "ov_cimguiname": "igPlotLinesFnFloatPtr_Strv",
       "ret": "void",
       "signature": "(const char*,float(*)(void*,int),void*,int,int,const char*,float,float,ImVec2)",
       "stname": ""
@@ -27897,7 +27897,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:492",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigProgressBar",
+      "ov_cimguiname": "igProgressBar_Strv",
       "ret": "void",
       "signature": "(float,const ImVec2,const char*)",
       "stname": ""
@@ -28163,7 +28163,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:452",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigPushIDSTR",
+      "ov_cimguiname": "igPushIDSTR_Strv",
       "ret": "void",
       "signature": "(const char*)",
       "stname": ""
@@ -28462,7 +28462,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:490",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigRadioButtonBool",
+      "ov_cimguiname": "igRadioButtonBool_Strv",
       "ret": "bool",
       "signature": "(const char*,bool)",
       "stname": ""
@@ -28491,7 +28491,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:491",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigRadioButtonIntPtr",
+      "ov_cimguiname": "igRadioButtonIntPtr_Strv",
       "ret": "bool",
       "signature": "(const char*,int*,int)",
       "stname": ""
@@ -29057,7 +29057,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2393",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigRenderTextSTR",
+      "ov_cimguiname": "igRenderTextSTR_Strv",
       "ret": "void",
       "signature": "(ImVec2,const char*,bool)",
       "stname": ""
@@ -29193,7 +29193,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2397",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigRenderTextClippedSTR",
+      "ov_cimguiname": "igRenderTextClippedSTR_Strv",
       "ret": "void",
       "signature": "(const ImVec2,const ImVec2,const char*,const ImVec2*,const ImVec2,const ImRect*)",
       "stname": ""
@@ -29341,7 +29341,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2399",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigRenderTextClippedExSTR",
+      "ov_cimguiname": "igRenderTextClippedExSTR_Strv",
       "ret": "void",
       "signature": "(ImDrawList*,const ImVec2,const ImVec2,const char*,const ImVec2*,const ImVec2,const ImRect*)",
       "stname": ""
@@ -29432,7 +29432,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2401",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigRenderTextEllipsis",
+      "ov_cimguiname": "igRenderTextEllipsis_Strv",
       "ret": "void",
       "signature": "(ImDrawList*,const ImVec2,const ImVec2,float,float,const char*,const ImVec2*)",
       "stname": ""
@@ -29523,7 +29523,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2395",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigRenderTextWrappedSTR",
+      "ov_cimguiname": "igRenderTextWrappedSTR_Strv",
       "ret": "void",
       "signature": "(ImVec2,const char*,float)",
       "stname": ""
@@ -29619,7 +29619,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:874",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigSaveIniSettingsToDisk",
+      "ov_cimguiname": "igSaveIniSettingsToDisk_Strv",
       "ret": "void",
       "signature": "(const char*)",
       "stname": ""
@@ -29852,7 +29852,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:601",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigSelectableBool",
+      "ov_cimguiname": "igSelectableBool_Strv",
       "ret": "bool",
       "signature": "(const char*,bool,ImGuiSelectableFlags,const ImVec2)",
       "stname": ""
@@ -29888,7 +29888,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:602",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigSelectableBoolPtr",
+      "ov_cimguiname": "igSelectableBoolPtr_Strv",
       "ret": "bool",
       "signature": "(const char*,bool*,ImGuiSelectableFlags,const ImVec2)",
       "stname": ""
@@ -30032,7 +30032,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:867",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigSetClipboardText",
+      "ov_cimguiname": "igSetClipboardText_Strv",
       "ret": "void",
       "signature": "(const char*)",
       "stname": ""
@@ -30309,7 +30309,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:771",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigSetDragDropPayload",
+      "ov_cimguiname": "igSetDragDropPayload_Strv",
       "ret": "bool",
       "signature": "(const char*,const void*,size_t,ImGuiCond)",
       "stname": ""
@@ -31128,7 +31128,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:757",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigSetTabItemClosed",
+      "ov_cimguiname": "igSetTabItemClosed_Strv",
       "ret": "void",
       "signature": "(const char*)",
       "stname": ""
@@ -31326,7 +31326,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:359",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigSetWindowCollapsedSTR",
+      "ov_cimguiname": "igSetWindowCollapsedSTR_Strv",
       "ret": "void",
       "signature": "(const char*,bool,ImGuiCond)",
       "stname": ""
@@ -31384,7 +31384,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:360",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigSetWindowFocusSTR",
+      "ov_cimguiname": "igSetWindowFocusSTR_Strv",
       "ret": "void",
       "signature": "(const char*)",
       "stname": ""
@@ -31555,7 +31555,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:357",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigSetWindowPosSTR",
+      "ov_cimguiname": "igSetWindowPosSTR_Strv",
       "ret": "void",
       "signature": "(const char*,const ImVec2,ImGuiCond)",
       "stname": ""
@@ -31674,7 +31674,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:358",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigSetWindowSizeSTR",
+      "ov_cimguiname": "igSetWindowSizeSTR_Strv",
       "ret": "void",
       "signature": "(const char*,const ImVec2,ImGuiCond)",
       "stname": ""
@@ -31861,7 +31861,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:296",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigShowFontSelector",
+      "ov_cimguiname": "igShowFontSelector_Strv",
       "ret": "void",
       "signature": "(const char*)",
       "stname": ""
@@ -31952,7 +31952,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:295",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigShowStyleSelector",
+      "ov_cimguiname": "igShowStyleSelector_Strv",
       "ret": "bool",
       "signature": "(const char*)",
       "stname": ""
@@ -32114,7 +32114,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:538",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigSliderAngle",
+      "ov_cimguiname": "igSliderAngle_Strv",
       "ret": "bool",
       "signature": "(const char*,float*,float,float,const char*,ImGuiSliderFlags)",
       "stname": ""
@@ -32257,7 +32257,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:534",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigSliderFloat",
+      "ov_cimguiname": "igSliderFloat_Strv",
       "ret": "bool",
       "signature": "(const char*,float*,float,float,const char*,ImGuiSliderFlags)",
       "stname": ""
@@ -32346,7 +32346,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:535",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigSliderFloat2",
+      "ov_cimguiname": "igSliderFloat2_Strv",
       "ret": "bool",
       "signature": "(const char*,float[2],float,float,const char*,ImGuiSliderFlags)",
       "stname": ""
@@ -32435,7 +32435,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:536",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigSliderFloat3",
+      "ov_cimguiname": "igSliderFloat3_Strv",
       "ret": "bool",
       "signature": "(const char*,float[3],float,float,const char*,ImGuiSliderFlags)",
       "stname": ""
@@ -32524,7 +32524,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:537",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigSliderFloat4",
+      "ov_cimguiname": "igSliderFloat4_Strv",
       "ret": "bool",
       "signature": "(const char*,float[4],float,float,const char*,ImGuiSliderFlags)",
       "stname": ""
@@ -32613,7 +32613,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:539",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigSliderInt",
+      "ov_cimguiname": "igSliderInt_Strv",
       "ret": "bool",
       "signature": "(const char*,int*,int,int,const char*,ImGuiSliderFlags)",
       "stname": ""
@@ -32702,7 +32702,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:540",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigSliderInt2",
+      "ov_cimguiname": "igSliderInt2_Strv",
       "ret": "bool",
       "signature": "(const char*,int[2],int,int,const char*,ImGuiSliderFlags)",
       "stname": ""
@@ -32791,7 +32791,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:541",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigSliderInt3",
+      "ov_cimguiname": "igSliderInt3_Strv",
       "ret": "bool",
       "signature": "(const char*,int[3],int,int,const char*,ImGuiSliderFlags)",
       "stname": ""
@@ -32880,7 +32880,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:542",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigSliderInt4",
+      "ov_cimguiname": "igSliderInt4_Strv",
       "ret": "bool",
       "signature": "(const char*,int[4],int,int,const char*,ImGuiSliderFlags)",
       "stname": ""
@@ -32977,7 +32977,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:543",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigSliderScalar",
+      "ov_cimguiname": "igSliderScalar_Strv",
       "ret": "bool",
       "signature": "(const char*,ImGuiDataType,void*,const void*,const void*,const char*,ImGuiSliderFlags)",
       "stname": ""
@@ -33082,7 +33082,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:544",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigSliderScalarN",
+      "ov_cimguiname": "igSliderScalarN_Strv",
       "ret": "bool",
       "signature": "(const char*,ImGuiDataType,void*,int,const void*,const void*,const char*,ImGuiSliderFlags)",
       "stname": ""
@@ -33125,7 +33125,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:482",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigSmallButton",
+      "ov_cimguiname": "igSmallButton_Strv",
       "ret": "bool",
       "signature": "(const char*)",
       "stname": ""
@@ -33512,7 +33512,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:756",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigTabItemButton",
+      "ov_cimguiname": "igTabItemButton_Strv",
       "ret": "bool",
       "signature": "(const char*,ImGuiTabItemFlags)",
       "stname": ""
@@ -33573,7 +33573,7 @@
       "location": "imgui_internal:2386",
       "namespace": "ImGui",
       "nonUDT": 1,
-      "ov_cimguiname": "SigTabItemCalcSize",
+      "ov_cimguiname": "igTabItemCalcSize_Strv",
       "ret": "void",
       "signature": "(const char*,bool)",
       "stname": ""
@@ -33640,7 +33640,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2385",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigTabItemEx",
+      "ov_cimguiname": "igTabItemEx_Strv",
       "ret": "bool",
       "signature": "(ImGuiTabBar*,const char*,bool*,ImGuiTabItemFlags)",
       "stname": ""
@@ -33755,7 +33755,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2388",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigTabItemLabelAndCloseButton",
+      "ov_cimguiname": "igTabItemLabelAndCloseButton_Strv",
       "ret": "void",
       "signature": "(ImDrawList*,const ImRect,ImGuiTabItemFlags,ImVec2,const char*,ImGuiID,ImGuiID,bool,bool*,bool*)",
       "stname": ""
@@ -34402,7 +34402,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:723",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigTableHeader",
+      "ov_cimguiname": "igTableHeader_Strv",
       "ret": "void",
       "signature": "(const char*)",
       "stname": ""
@@ -34936,7 +34936,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:720",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigTableSetupColumn",
+      "ov_cimguiname": "igTableSetupColumn_Strv",
       "ret": "void",
       "signature": "(const char*,ImGuiTableColumnFlags,float,ImU32)",
       "stname": ""
@@ -35221,7 +35221,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2473",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigTempInputScalar",
+      "ov_cimguiname": "igTempInputScalar_Strv",
       "ret": "bool",
       "signature": "(const ImRect,ImGuiID,const char*,ImGuiDataType,void*,const char*,const void*,const void*)",
       "stname": ""
@@ -35304,7 +35304,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2472",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigTempInputText",
+      "ov_cimguiname": "igTempInputText_Strv",
       "ret": "bool",
       "signature": "(const ImRect,ImGuiID,const char*,char*,int,ImGuiInputTextFlags)",
       "stname": ""
@@ -35530,7 +35530,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2427",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigTextExSTR",
+      "ov_cimguiname": "igTextExSTR_Strv",
       "ret": "void",
       "signature": "(const char*,ImGuiTextFlags)",
       "stname": ""
@@ -35597,7 +35597,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:463",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigTextUnformattedSTR",
+      "ov_cimguiname": "igTextUnformattedSTR_Strv",
       "ret": "void",
       "signature": "(const char*)",
       "stname": ""
@@ -35777,7 +35777,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:580",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigTreeNodeSTR",
+      "ov_cimguiname": "igTreeNodeSTR_Strv",
       "ret": "bool",
       "signature": "(const char*)",
       "stname": ""
@@ -35807,7 +35807,7 @@
       "isvararg": "...)",
       "location": "imgui:581",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigTreeNodeSTRStr",
+      "ov_cimguiname": "igTreeNodeSTRStr_Strv",
       "ret": "bool",
       "signature": "(const char*,const char*,...)",
       "stname": ""
@@ -35866,7 +35866,7 @@
       "isIMSTR_S": 1,
       "location": "imgui_internal:2448",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigTreeNodeBehavior",
+      "ov_cimguiname": "igTreeNodeBehavior_Strv",
       "ret": "bool",
       "signature": "(ImGuiID,ImGuiTreeNodeFlags,const char*)",
       "stname": ""
@@ -36015,7 +36015,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:585",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigTreeNodeExSTR",
+      "ov_cimguiname": "igTreeNodeExSTR_Strv",
       "ret": "bool",
       "signature": "(const char*,ImGuiTreeNodeFlags)",
       "stname": ""
@@ -36049,7 +36049,7 @@
       "isvararg": "...)",
       "location": "imgui:586",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigTreeNodeExSTRStr",
+      "ov_cimguiname": "igTreeNodeExSTRStr_Strv",
       "ret": "bool",
       "signature": "(const char*,ImGuiTreeNodeFlags,const char*,...)",
       "stname": ""
@@ -36148,7 +36148,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:588",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigTreeNodeExVSTR",
+      "ov_cimguiname": "igTreeNodeExVSTR_Strv",
       "ret": "bool",
       "signature": "(const char*,ImGuiTreeNodeFlags,const char*,va_list)",
       "stname": ""
@@ -36235,7 +36235,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:583",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigTreeNodeVSTR",
+      "ov_cimguiname": "igTreeNodeVSTR_Strv",
       "ret": "bool",
       "signature": "(const char*,const char*,va_list)",
       "stname": ""
@@ -36317,7 +36317,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:590",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigTreePushSTR",
+      "ov_cimguiname": "igTreePushSTR_Strv",
       "ret": "void",
       "signature": "(const char*)",
       "stname": ""
@@ -36541,7 +36541,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:545",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigVSliderFloat",
+      "ov_cimguiname": "igVSliderFloat_Strv",
       "ret": "bool",
       "signature": "(const char*,const ImVec2,float*,float,float,const char*,ImGuiSliderFlags)",
       "stname": ""
@@ -36638,7 +36638,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:546",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigVSliderInt",
+      "ov_cimguiname": "igVSliderInt_Strv",
       "ret": "bool",
       "signature": "(const char*,const ImVec2,int*,int,int,const char*,ImGuiSliderFlags)",
       "stname": ""
@@ -36743,7 +36743,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:547",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigVSliderScalar",
+      "ov_cimguiname": "igVSliderScalar_Strv",
       "ret": "bool",
       "signature": "(const char*,const ImVec2,ImGuiDataType,void*,const void*,const void*,const char*,ImGuiSliderFlags)",
       "stname": ""
@@ -36872,7 +36872,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:620",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigValueBool",
+      "ov_cimguiname": "igValueBool_Strv",
       "ret": "void",
       "signature": "(const char*,bool)",
       "stname": ""
@@ -36897,7 +36897,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:621",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigValueInt",
+      "ov_cimguiname": "igValueInt_Strv",
       "ret": "void",
       "signature": "(const char*,int)",
       "stname": ""
@@ -36922,7 +36922,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:622",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigValueUint",
+      "ov_cimguiname": "igValueUint_Strv",
       "ret": "void",
       "signature": "(const char*,unsigned int)",
       "stname": ""
@@ -36953,7 +36953,7 @@
       "isIMSTR_S": 1,
       "location": "imgui:623",
       "namespace": "ImGui",
-      "ov_cimguiname": "SigValueFloat",
+      "ov_cimguiname": "igValueFloat_Strv",
       "ret": "void",
       "signature": "(const char*,float,const char*)",
       "stname": ""
